@@ -1,0 +1,38 @@
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ddd, #fff); }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+.line {
+  height: 0px;
+  width: 80%;
+  color: inherit;
+  border: none;
+  border-bottom: 2px solid;
+  margin: auto; }
+
+.clear {
+  clear: both; }
+
+[data-icon] {
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.loading-bg {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../icon/loading.gif) !important;
+  color: transparent !important; }
+
+[data-icon="email"] {
+  background-image: url(../icon/email.png); }
+
+[data-icon="key"] {
+  background-image: url(../icon/key.png); }
