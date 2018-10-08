@@ -12,7 +12,7 @@ if (!$route) return die(json_encode($jsonArr, JSON_PRETTY_PRINT));
 @session_start();
 require '../../rb.php';
 require 'Request.php';
-require 'db.php';
+require '../../db.php';
 
 $router = new Request();
 
