@@ -15,7 +15,14 @@ export default class ContentScreen extends Component {
     render () {
         return (
             <div id="ContentScreen">
-                <a href="#" onClick={this.handleLogOut}>Log out</a>
+                
+                <div className="rightSide">
+                    <a href="#" onClick={this.handleLogOut}>Log out</a>
+                </div>
+
+                <div className="leftSide">
+                asd
+                </div>
             </div>
         )
     }

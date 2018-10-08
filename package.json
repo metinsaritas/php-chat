@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run start-php",
-    "dev": "concurrently npm:start-php npm:watch-*",
+    "dev": "concurrently npm:watch-* npm:devserver",
     "start-php": "php -S localhost:80 -t public",
     "watch-react": "nodemon --watch ./src/components --ext js,scss --exec \"npm run build\"",
     "watch-scss": "nodemon --watch ./src/scss --ext scss --exec \"npm run build-scss\"",
     "build-scss": "node-sass ./src/scss/style.scss ./public/css/style.css",
-    "build": "webpack --mode development"
+    "build": "webpack --mode development",
+    "devserver": "webpack-dev-server --mode development --devtool inline-source-map --hot"
   },
   "repository": {
     "type": "git",
@@ -26,16 +27,17 @@
     "babel-loader": "^8.0.4",
     "concurrently": "^4.0.1",
     "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
     "node-sass": "^4.9.3",
     "nodemon": "^1.18.4",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "file-loader": "^2.0.0",
     "jquery": "^3.3.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
