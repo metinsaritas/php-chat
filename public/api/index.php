@@ -12,8 +12,8 @@ if (!$route) return die(json_encode($jsonArr, JSON_PRETTY_PRINT));
 @session_start();
 require '../../rb.php';
 require 'Request.php';
+require 'db.php';
 
-R::setup('mysql:host=localhost;dbname=sztechat','root', '');
 $router = new Request();
 
 $router->post('/login', function ($self) {
