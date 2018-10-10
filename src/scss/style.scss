@@ -37,5 +37,17 @@ body {
     color: transparent !important;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #cccccc; 
+}
+
 [data-icon="email"] {background-image: url(../icon/email.png)}
 [data-icon="key"] {background-image: url(../icon/key.png)}

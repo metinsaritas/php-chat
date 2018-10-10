@@ -12,17 +12,103 @@
     .leftSide {
         width: 30%;
         float: left;
-        background: blue;
+        background: #eeeeee;
         box-sizing: border-box;
+        border-right: 1px solid rgba(0, 0, 0, 0.08);
         height: inherit;
+
+        $lsHeaderHeight: 50px;
+        .header {
+            height: $lsHeaderHeight;
+            padding: 5px;
+        }
+
+        .middle {
+            background-color: white;
+            height: calc(100% - #{$lsHeaderHeight});
+
+            .searchContainer {
+                height: 20px;
+                background-color: #fbfbfb;
+                padding: 12px;
+
+                .searchInput {
+                    display: block;
+                    margin: auto;
+                    width: 100%;
+                    padding: 4px;
+                    border-radius: 20px;
+                    border: 1px solid #dddddd;
+                    outline: none;
+                    text-indent: 40px;
+                }
+            }
+
+            .usersContainer {
+                position: relative;
+                overflow: auto;
+                overflow-x: hidden;
+                overflow-y: auto;
+                height: calc(100% - #{$lsHeaderHeight});
+
+                .userUlList {
+                    list-style-type: none;
+                    margin: 0px;
+                    padding: 0px;
+
+                    .userLi {
+                        background: white; 
+                        height: 72px;
+                        box-sizing: border-box;
+                        overflow: hidden;
+                        clear: both;
+                        padding: 8px;
+                        user-select: none;
+
+                        .imageContainer {
+                            width: 49px;
+                            height: 49px;
+                            border-radius: 100%;
+                            float: left;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-image: url(~/api/photo/default);
+                        }
+
+                        .infoContainer {
+                            float: left;
+                            width: calc(100% - 71px);
+                            padding: 0px 8px;
+                            height: 100%;
+                            font-family: Raleway;
+                            font-size: 18px;
+                            color: #333;
+                            border-bottom: 1px solid #ddeeff;
+
+                            .nickName {
+                                margin-top: 4px;
+                            }
+                            .email {
+                                font-size: 16px;
+                                color: #948888;
+                                margin-top: 1px;
+                                font-family: 'Open Sans';
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .rightSide {
         width: 70%;
         float: right;
-        background: red;
+        background: #f7f9fa;
         box-sizing: border-box;
         height: inherit;
+        background-image: url(~/img/bg-texture.png);
+        background-size: 460px;
     }
 }
 

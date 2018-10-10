@@ -29,13 +29,21 @@ class Request {
 
     function result ($S) {
         $method = strtoupper($S["REQUEST_METHOD"]);
-        $pathinfo = '/'.@$_GET['url'];
+        $pi = $pathinfo = @$_GET['url'];
+        $arr = explode('/', $pathinfo);
+        $pathinfo = '/'.$pathinfo;
+
+        if (count($arr) > 1) {
+            $this->id = $arr[1];
+            $pathinfo = '/'.$arr[0].'/?';
+        }
+
         if (array_key_exists($method, $this->req) && array_key_exists($pathinfo, $func = $this->req[$method]))
         return $func[$pathinfo]($this);
         return [
             "error" => false,
             "message" => "Unhandled request method",
-            "detail" => [$this->req[$method], $method, $S, $pathinfo]  
+            "detail" => [$this->req[$method], $method, $S, $pi]  
         ];
     }
 
