@@ -114,6 +114,10 @@
                         padding: 8px;
                         user-select: none;
 
+                        &:hover {
+                            background-color: #e9ebeb;
+                        }
+
                         .imageContainer {
                             width: 49px;
                             height: 49px;
@@ -163,6 +167,15 @@
         background-size: 460px;
         position: relative;
 
+        .gradient {
+            height: 50px;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            z-index: 2;
+            background: linear-gradient(#eeeeee, #eeeeee00);
+        }
+
         .messagesContainer {
             height: calc(100% - 60px);
             position: absolute;
@@ -178,17 +191,15 @@
                 //height: calc(100% - 260px);
                 margin-top: -200px;
             }
-            
 
             .messagesArea {
                 position: absolute;
-                background: red;
                 width: 100%;
                 height: 100%;
                 box-sizing: border-box;
                 clear: both;
                 overflow: hidden auto;
-                padding: 0px 26px 0px 26px;
+                padding: 0px 26px 14px 26px;
 
                 .messageContainer {
                     position: relative;
@@ -207,6 +218,16 @@
                         box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
                         position: relative;
                         margin-top: 10px;
+                        max-width: 260px;
+                        word-break: break-all;
+
+                        .name {
+                            font-family: 'Open Sans';
+                            margin-bottom: 7px;
+                            font-size: 12px;
+                            font-weight: bold;
+                            color: $colorSzte;
+                        }
 
                         &::after {
                             content: '';
@@ -225,9 +246,14 @@
                             float: right;
                             border-radius: 7.5px 0 7.5px 7.5px;
 
+                            .name {
+                                display: none;
+                            }
+
                             &::after {
                                 top: 0px;
-                                left: 46px;
+                                right: -12px;
+                                left: unset;
                                 background-image: url(~/icon/tail-me.png);
                             }
                         }
@@ -321,7 +347,7 @@
 
                     .chattext {
                         float: left;
-                        width: 100%;
+                        width: calc(100% + 7px);
                         height: 40px;
                         box-sizing: border-box;
                         border-radius: 21px;

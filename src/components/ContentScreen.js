@@ -11,13 +11,20 @@ export default class ContentScreen extends Component {
     constructor (props) {
         super(props)
 
+        let audio = new Audio()
+        audio.autoplay = false
+        audio.src = '/message-ringtone.mp3'
+
         this.state = {
             users: [],
             me: {},
             filterUl: '',
             emojis: this.getEmojis(),
-            isShowingEmojiPanel: false
+            isShowingEmojiPanel: false,
+            audio
         }
+
+        //audio.pause(); audio.currentTime = 0; audio.play()
 
         this.handleLogOut = this.handleLogOut.bind(this)
         this.handleSetFilter = this.handleSetFilter.bind(this)
@@ -54,6 +61,9 @@ export default class ContentScreen extends Component {
             <div id="ContentScreen">
                 
                 <div className="rightSide">
+
+                    <div className="gradient"></div>
+                    
                     <div className={this.state.isShowingEmojiPanel ? 'messagesContainer open': 'messagesContainer'}>
                         <div className="messagesArea">
 
@@ -94,7 +104,17 @@ export default class ContentScreen extends Component {
                             </div>
 
                             <div className="messageContainer">
-                                <div className="messageHolder me">Szia!</div>
+                                <div className="messageHolder">
+                                    <div className="name">Metin</div>
+                                    <span>Selamlar</span>
+                                </div>
+                            </div>
+
+                            <div className="messageContainer">
+                                <div className="messageHolder">
+                                    <div className="name">Metin</div>
+                                    <span>Merhaba</span>
+                                </div>
                             </div>
 
                             <div className="messageContainer">
