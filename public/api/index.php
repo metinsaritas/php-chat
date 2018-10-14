@@ -118,6 +118,19 @@ $router->get('/users', function($self) {
                                       ]]);
 });
 
+$router->get('/ringtone', function($self) {
+    $email = @$_SESSION["email"];
+    if (empty($email)) 
+        return $self->error('You have to log in');
+
+    $ringtone = '../../ringtone.mp3';
+    if (@!file_exists($ringtone)) 
+        return $self->error('Ringtone File is not exists');
+
+    header('Content-Type: audio/mp3');
+    die(readfile($ringtone));
+});
+
 $jsonArr = $router->result($_SERVER);
 
 echo json_encode($jsonArr, JSON_PRETTY_PRINT);;

@@ -13,7 +13,7 @@ export default class ContentScreen extends Component {
 
         let audio = new Audio()
         audio.autoplay = false
-        audio.src = '/message-ringtone.mp3'
+        audio.src = '/api/ringtone'
 
         this.state = {
             users: [],
@@ -21,16 +21,30 @@ export default class ContentScreen extends Component {
             filterUl: '',
             emojis: this.getEmojis(),
             isShowingEmojiPanel: false,
-            audio
+            audio,
+            isWindowFocused: false,
+            unreadMessageCount: 0
         }
-
-        //audio.pause(); audio.currentTime = 0; audio.play()
 
         this.handleLogOut = this.handleLogOut.bind(this)
         this.handleSetFilter = this.handleSetFilter.bind(this)
     }
 
     componentDidMount () {
+        $(window).on('focus', () => {
+            this.setState({
+                isWindowFocused: true,
+                unreadMessageCount: 0
+            })
+
+            $('head title').text('Chat | SZTEChat')
+        })
+
+        $(window).on('blur', () => {
+            this.setState({
+                isWindowFocused: false
+            })
+        })
 
         axios({
             method: 'GET',
@@ -48,6 +62,8 @@ export default class ContentScreen extends Component {
                 }),
                 me: json.details.me
             })
+
+            this.polling.bind(this).call()
         })
         .catch(err => console.warn(err))
         .then(() => {
@@ -282,5 +298,36 @@ export default class ContentScreen extends Component {
         this.setState(state => {
             return {isShowingEmojiPanel: !state.isShowingEmojiPanel}
         })
+    }
+
+    polling () {
+        axios({
+            method: 'GET',
+            url: '/api/polling.php'
+        })
+        .then(result => result.data)
+        .then(json => {
+            if (!json.hasOwnProperty('error')) return /*throw*/ new Error('not a json')
+            if (json.error === true) throw new Error(json.message || 'An undefined error')
+            if (!json.content) throw new Error('content is empty')
+            
+            let {isWindowFocused, audio} = this.state
+            
+            if (!isWindowFocused) {
+                this.setState(state => {
+                    return {
+                        unreadMessageCount: state.unreadMessageCount + 1
+                    }
+                })
+
+                let count = this.state.unreadMessageCount
+                let countText = count <= 0 ? '' : `(${count}) `
+                $('head title').text(`${countText}Chat | SZTEChat`)
+                
+                audio.pause(); audio.currentTime = 0; audio.play()
+            }
+        })
+        .catch(err => console.log(err.message))
+        .then(() => this.polling())
     }
 }

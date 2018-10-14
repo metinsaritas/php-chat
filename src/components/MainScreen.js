@@ -112,6 +112,7 @@ export default class MainScreen extends Component {
         .then(json => {
             if (json.error) 
                 return setTimeout(alert.bind(null, json.message), 1)
+            window.localStorage.setItem('email', email.value)
             window.location.reload()
         })
         .catch(err => console.log(err))
