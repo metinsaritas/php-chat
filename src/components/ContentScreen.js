@@ -13,7 +13,8 @@ export default class ContentScreen extends Component {
         this.state = {
             users: [],
             me: {},
-            filterUl: ''
+            filterUl: '',
+            emojis: this.getEmojis()
         }
 
         this.handleLogOut = this.handleLogOut.bind(this)
@@ -56,8 +57,27 @@ export default class ContentScreen extends Component {
                     </div>
 
                     <div className="chatContainer">
+
+                        <div className="emojiContainer">
+                            <div className="emojis">
+                                {
+                                    this.state.emojis
+                                    .map((emoji, i) => {
+                                        let em = emoji
+                                        let isObj = typeof em === 'object'
+                                        let css = isObj ? em.css : em
+                                        let title = isObj ? (em.title || em.css) : em
+                                        return (
+                                        <div key={i} className="emoji" title={title}>
+                                            <i className={`em em-${css}`}></i>
+                                        </div>)
+                                        })
+                                }
+                            </div>
+                        </div>
+
                         <div className="container">
-                            <div className="emoji-opener" data-icon="emoji-arrow" title="Emojies"></div>
+                            <div className="emoji-opener" data-icon="emoji" title="Emojis"></div>
 
                             <input type="text" placeholder="Text a message" className="chattext"/>
 
@@ -128,5 +148,9 @@ export default class ContentScreen extends Component {
             window.location.reload()
         })
         .catch(err => console.log(err))
+    }
+
+    getEmojis () {
+        return [{css: 'smiley', name: 'Smiley'}, 'mosque']
     }
 }

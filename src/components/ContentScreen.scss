@@ -173,28 +173,82 @@
         }
         
         .chatContainer {
-            height: 60px;
+            height: 60px + 200px;
             position: absolute;
             bottom: 0px;
             left: 0px;
             width: 100%;
             background: #efefef;
 
+            .emojiContainer {
+                height: 200px;
+                width: 100%;
+
+                .emojis {
+
+                    .emoji {
+                        display: inline-block;
+                        padding: 4px;
+                        margin: 4px;
+
+                        border-radius: 100%;
+                        cursor: pointer;
+                        transition-property: border-radius, background-color;
+                        transition-duration: 500ms;
+
+                        &:hover {
+                            background-color: #dddddd;
+                            border-radius: 3px;  
+                        }
+                    }
+
+                }
+            }
+
             .container {
                 height: 60px;
                 position: absolute;
                 bottom: 0;
                 left: 0;
+                clear: both;
+                width: 100%;
+
+                .chattext {
+                    float: left;
+                    width: calc(100% - 120px);
+                    height: 40px;
+                    margin-top: 10px;
+                    box-sizing: border-box;
+                    border-radius: 21px;
+                    border: none;
+                    outline: none;
+                    font-family: Raleway;
+                    font-size: 15px;
+                    text-indent: 10px;
+                }
+
+                .emoji-opener {
+                    float: left;
+                    width: 40px;
+                    height: 40px;
+                    background-size: 26px;
+                    margin: 10px;
+                    background-position: center;
+                    cursor: pointer;
+                }
+
+                .send {
+                    float: left;
+                    width: 40px;
+                    height: 40px;
+                    background-size: 26px;
+                    margin: 10px;
+                    background-position: center;
+                    cursor: pointer;
+                    opacity: 0.5;
+                }
             }
 
-            .emoji-opener {
-                width: 40px;
-                height: 40px;
-                background-size: 26px;
-                margin: 10px;
-                background-position: center;
-                cursor: pointer;
-            }
         }
     }
 }

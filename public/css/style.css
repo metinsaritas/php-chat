@@ -57,3 +57,6 @@ body {
 
 [data-icon="emoji-arrow"] {
   background-image: url(../icon/emoji-arrow.png); }
+
+[data-icon="send"] {
+  background-image: url(../icon/send.png); }

@@ -8,6 +8,7 @@
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/emoji.css">
     <style>
         body {font-family: Raleway;}
         #react-loading {
