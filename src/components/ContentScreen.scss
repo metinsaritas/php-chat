@@ -173,16 +173,29 @@
         }
         
         .chatContainer {
-            height: 60px + 200px;
+            height: 60px;
             position: absolute;
             bottom: 0px;
             left: 0px;
             width: 100%;
             background: #efefef;
+            overflow: hidden;
+            
+            transition-property: height;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in-out;
+
+            &.open {
+                height: 60px + 200px;
+            }
 
             .emojiContainer {
                 height: 200px;
                 width: 100%;
+                position: absolute;
+                bottom: 60px;
+                left: 0px;
+                overflow: hidden auto;
 
                 .emojis {
 

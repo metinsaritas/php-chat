@@ -14,7 +14,8 @@ export default class ContentScreen extends Component {
             users: [],
             me: {},
             filterUl: '',
-            emojis: this.getEmojis()
+            emojis: this.getEmojis(),
+            isShowingEmojiPanel: false
         }
 
         this.handleLogOut = this.handleLogOut.bind(this)
@@ -56,7 +57,7 @@ export default class ContentScreen extends Component {
                     
                     </div>
 
-                    <div className="chatContainer">
+                    <div className={this.state.isShowingEmojiPanel ? 'chatContainer open': 'chatContainer'}>
 
                         <div className="emojiContainer">
                             <div className="emojis">
@@ -77,7 +78,9 @@ export default class ContentScreen extends Component {
                         </div>
 
                         <div className="container">
-                            <div className="emoji-opener" data-icon="emoji" title="Emojis"></div>
+                            <div className="emoji-opener" data-icon={`emoji${this.state.isShowingEmojiPanel?'-arrow':''}`} title="Emojis"
+                            onClick={this.toggleEmojiPanel.bind(this)}
+                            ></div>
 
                             <input type="text" placeholder="Text a message" className="chattext"/>
 
@@ -151,6 +154,31 @@ export default class ContentScreen extends Component {
     }
 
     getEmojis () {
-        return [{css: 'smiley', name: 'Smiley'}, 'mosque']
+        return [{css: 'smiley', title: 'Smiley'}, 'mosque','flag-tr','flag-hu','innocent',
+        
+            'mosque','flag-tr','flag-hu','innocent',
+            'mosque','flag-tr','flag-hu','innocent',
+            'mosque','flag-tr','flag-hu','innocent',
+            'mosque','flag-tr','flag-hu','innocent',
+            'mosque','flag-tr','flag-hu','innocent',
+            'mosque','flag-tr','flag-hu','innocent',
+            'mosque','flag-tr','flag-hu','innocent',
+            'mosque','flag-tr','flag-hu','innocent',
+            'mosque','flag-tr','flag-hu','innocent',
+            'mosque','flag-tr','flag-hu','innocent',
+            'mosque','flag-tr','flag-hu','innocent',
+            'mosque','flag-tr','flag-hu','innocent',
+            'mosque','flag-tr','flag-hu','innocent',
+            'mosque','flag-tr','flag-hu','innocent',
+            'mosque','flag-tr','flag-hu','innocent',
+            'mosque','flag-tr','flag-hu','innocent',
+
+        ]
+    }
+
+    toggleEmojiPanel () {
+        this.setState(state => {
+            return {isShowingEmojiPanel: !state.isShowingEmojiPanel}
+        })
     }
 }
