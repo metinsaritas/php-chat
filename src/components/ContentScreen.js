@@ -4,6 +4,7 @@ import './ContentScreen.scss'
 
 import axios from 'axios'
 import $ from 'jquery'
+window.$ = $
 
 export default class ContentScreen extends Component {
 
@@ -53,8 +54,62 @@ export default class ContentScreen extends Component {
             <div id="ContentScreen">
                 
                 <div className="rightSide">
-                    <div className="messagesContainer">
-                    
+                    <div className={this.state.isShowingEmojiPanel ? 'messagesContainer open': 'messagesContainer'}>
+                        <div className="messagesArea">
+
+                            <div className="messageContainer">
+                                <div className="messageHolder">Hello!</div>
+                            </div>
+
+                            <div className="messageContainer">
+                                <div className="messageHolder me">Szia!</div>
+                            </div>
+
+                            <div className="messageContainer">
+                                <div className="messageHolder me">Szia!</div>
+                            </div>
+
+                            <div className="messageContainer">
+                                <div className="messageHolder me">Szia!</div>
+                            </div>
+
+                            <div className="messageContainer">
+                                <div className="messageHolder me">Szia!</div>
+                            </div>
+
+                            <div className="messageContainer">
+                                <div className="messageHolder me">Szia!</div>
+                            </div>
+
+                            <div className="messageContainer">
+                                <div className="messageHolder me">Szia!</div>
+                            </div>
+
+                            <div className="messageContainer">
+                                <div className="messageHolder me">Szia!</div>
+                            </div>
+
+                            <div className="messageContainer">
+                                <div className="messageHolder me">Szia!</div>
+                            </div>
+
+                            <div className="messageContainer">
+                                <div className="messageHolder me">Szia!</div>
+                            </div>
+
+                            <div className="messageContainer">
+                                <div className="messageHolder me">Szia!</div>
+                            </div>
+
+                            <div className="messageContainer">
+                                <div className="messageHolder me">Szia!</div>
+                            </div>
+
+                            <div className="messageContainer">
+                                <div className="messageHolder me">Szia!</div>
+                            </div>
+
+                        </div>
                     </div>
 
                     <div className={this.state.isShowingEmojiPanel ? 'chatContainer open': 'chatContainer'}>
@@ -69,7 +124,7 @@ export default class ContentScreen extends Component {
                                         let css = isObj ? em.css : em
                                         let title = isObj ? (em.title || em.css) : em
                                         return (
-                                        <div key={i} className="emoji" title={title}>
+                                        <div onClick={this.handleSetEmoji.bind(this, i)} key={i} className="emoji" title={title}>
                                             <i className={`em em-${css}`}></i>
                                         </div>)
                                         })
@@ -82,7 +137,10 @@ export default class ContentScreen extends Component {
                             onClick={this.toggleEmojiPanel.bind(this)}
                             ></div>
 
-                            <input type="text" placeholder="Text a message" className="chattext"/>
+                            <div className="chattextContainer">
+                                <span className="ph">Text a message</span>
+                                <div className="chattext" ref="chattext" contentEditable={true}></div>
+                            </div>
 
                             <div className="send" data-icon="send" title="Send the message"></div>
                         </div>
@@ -151,6 +209,30 @@ export default class ContentScreen extends Component {
             window.location.reload()
         })
         .catch(err => console.log(err))
+    }
+
+    handleSetEmoji (i) {
+        let chattext = this.refs.chattext
+        let em = this.state.emojis[i]
+        let isObj = typeof em === 'object'
+        let css = isObj ? em.css : em
+        let title = isObj ? (em.title || em.css) : em
+
+        let emojiEl = `<span contenteditable="false" class="${`em em-${css}`} emoji" title="${title}"></span>`
+        chattext.innerHTML += emojiEl
+        /*
+        let sel, range, html;
+        if (window.getSelection) {
+            sel = window.getSelection();
+            if (sel.getRangeAt && sel.rangeCount) {
+                range = sel.getRangeAt(0);
+                range.deleteContents();
+                range.insertNode( document.createTextNode(emojiEl) );
+            }
+        } else if (document.selection && document.selection.createRange) {
+            document.selection.createRange().text = emojiEl;
+        }*/
+        
     }
 
     getEmojis () {

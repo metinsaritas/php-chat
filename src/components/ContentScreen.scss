@@ -168,8 +168,74 @@
             position: absolute;
             bottom: 0px;
             top: 0px;
-            background: red;
             width: 100%;
+
+            transition-property: height, margin;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in-out;
+
+            &.open {
+                //height: calc(100% - 260px);
+                margin-top: -200px;
+            }
+            
+
+            .messagesArea {
+                position: absolute;
+                background: red;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                clear: both;
+                overflow: hidden auto;
+                padding: 0px 26px 0px 26px;
+
+                .messageContainer {
+                    position: relative;
+                    clear: both;
+
+                    .messageHolder {
+                        float: left;
+                        background-color: #ffffff;
+                        font-family: Raleway;
+                        font-size: 14px;
+                        color: black;
+                        border-radius: 8px;
+                        width: auto;
+                        padding:6px 7px 8px 9px;
+                        border-radius: 0px 7.5px 7.5px 7.5px;
+                        box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+                        position: relative;
+                        margin-top: 10px;
+
+                        &::after {
+                            content: '';
+                            width: 12px;
+                            height: 19px;
+                            position: absolute;
+                            top: 0px;
+                            left: -12px;
+                            background-image: url(~/icon/tail.png);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
+
+                        &.me {
+                            background-color: #dcf8c6;
+                            float: right;
+                            border-radius: 7.5px 0 7.5px 7.5px;
+
+                            &::after {
+                                top: 0px;
+                                left: 46px;
+                                background-image: url(~/icon/tail-me.png);
+                            }
+                        }
+                    }
+
+                    
+                }
+            }
         }
         
         .chatContainer {
@@ -198,6 +264,8 @@
                 overflow: hidden auto;
 
                 .emojis {
+                    user-select: none;
+                    border-top: 1px solid #ddd;
 
                     .emoji {
                         display: inline-block;
@@ -226,7 +294,7 @@
                 clear: both;
                 width: 100%;
 
-                .chattext {
+                .chattextContainer {
                     float: left;
                     width: calc(100% - 120px);
                     height: 40px;
@@ -238,6 +306,52 @@
                     font-family: Raleway;
                     font-size: 15px;
                     text-indent: 10px;
+                    background: white;
+                    position: relative;
+                    overflow: hidden;
+
+                    .ph {
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        font-family: Raleway;
+                        color: #8a7575;
+                    }
+                
+
+                    .chattext {
+                        float: left;
+                        width: 100%;
+                        height: 40px;
+                        box-sizing: border-box;
+                        border-radius: 21px;
+                        border: none;
+                        outline: none;
+                        font-family: Raleway;
+                        font-size: 15px;
+                        text-indent: 10px;
+                        overflow: hidden auto;
+                        padding: 10px;
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        background-color: inherit;
+
+                        &:empty {
+                            background-color: transparent;
+                        }
+
+                        .emoji {
+                            width: 24px;
+                            height: 24px;
+                            user-select: none;
+
+                            i {
+                                font-style: normal;
+                            }
+                        }
+                    }
+
                 }
 
                 .emoji-opener {
