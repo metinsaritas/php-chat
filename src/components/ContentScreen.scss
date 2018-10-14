@@ -10,7 +10,7 @@
     height: 100%;
 
     .leftSide {
-        width: 30%;
+        width: 300px;
         float: left;
         background: #eeeeee;
         box-sizing: border-box;
@@ -21,6 +21,52 @@
         .header {
             height: $lsHeaderHeight;
             padding: 5px;
+            clear: both;
+
+            .title {
+                float: left;
+
+                .imageContainer {
+                    width: 49px;
+                    height: 49px;
+                    border-radius: 100%;
+                    float: left;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-image: url(/api/photo/default);
+                }
+
+                .nickName {
+                    float: left;
+                    line-height: 50px;
+                    font-family: Raleway;
+                    margin-left: 10px;
+                    font-weight: bold;
+                    color: $colorSzte;
+                }
+            }
+
+            .settingsContainer {
+                width: auto;
+                float: right;
+
+                .setting {
+                    background-size: 24px 24px;
+                    width: 40px;
+                    background-position: center;
+                    height: 40px;
+                    padding: 4px;
+                    border-radius: 0%;
+                    cursor: pointer;
+                    transition-property: border-radius, background-color;
+                    transition-duration: 500ms;
+
+                    &:hover {
+                        background-color: #dddddd;
+                        border-radius: 100%;  
+                    }
+                }
+            }
         }
 
         .middle {
@@ -40,7 +86,10 @@
                     border-radius: 20px;
                     border: 1px solid #dddddd;
                     outline: none;
-                    text-indent: 40px;
+                    text-indent: 24px;
+                    background-position: 2px 2px;
+                    background-size: 20px;
+                    font-family: Raleway;
                 }
             }
 
@@ -75,6 +124,9 @@
                             background-image: url(~/api/photo/default);
                         }
 
+                        &:last-child .infoContainer {
+                            border-bottom: none;
+                        }
                         .infoContainer {
                             float: left;
                             width: calc(100% - 71px);
@@ -102,13 +154,48 @@
     }
 
     .rightSide {
-        width: 70%;
+        width: calc(100% - 300px);
         float: right;
         background: #f7f9fa;
         box-sizing: border-box;
         height: inherit;
         background-image: url(~/img/bg-texture.png);
         background-size: 460px;
+        position: relative;
+
+        .messagesContainer {
+            height: calc(100% - 60px);
+            position: absolute;
+            bottom: 0px;
+            top: 0px;
+            background: red;
+            width: 100%;
+        }
+        
+        .chatContainer {
+            height: 60px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            background: #efefef;
+
+            .container {
+                height: 60px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
+            .emoji-opener {
+                width: 40px;
+                height: 40px;
+                background-size: 26px;
+                margin: 10px;
+                background-position: center;
+                cursor: pointer;
+            }
+        }
     }
 }
 

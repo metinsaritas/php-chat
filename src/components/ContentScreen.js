@@ -11,10 +11,13 @@ export default class ContentScreen extends Component {
         super(props)
 
         this.state = {
-            users: []
+            users: [],
+            me: {},
+            filterUl: ''
         }
 
         this.handleLogOut = this.handleLogOut.bind(this)
+        this.handleSetFilter = this.handleSetFilter.bind(this)
     }
 
     componentDidMount () {
@@ -25,9 +28,15 @@ export default class ContentScreen extends Component {
         }).then(result => result.data)
         .then(json => {
             if (json.error) return console.warn(json.message);
-
+            let {me, users} = json.details
             this.setState({
-                users: [...json.details[0]]
+                users: users.filter(user => {
+                    if (user.email != me.email)
+                    return true
+                    json.details.me = user
+                    return false
+                }),
+                me: json.details.me
             })
         })
         .catch(err => console.warn(err))
@@ -42,34 +51,55 @@ export default class ContentScreen extends Component {
             <div id="ContentScreen">
                 
                 <div className="rightSide">
+                    <div className="messagesContainer">
+                    
+                    </div>
+
+                    <div className="chatContainer">
+                        <div className="container">
+                            <div className="emoji-opener" data-icon="emoji-arrow" title="Emojies"></div>
+
+                            <input type="text" placeholder="Text a message" className="chattext"/>
+
+                            <div className="send" data-icon="send" title="Send the message"></div>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="leftSide">
                     
                     <div className="header">
-                        <a href="#" onClick={this.handleLogOut}>Log out</a>
+
+                        <div className="title">
+                            <div className="imageContainer" style={{backgroundImage: `url(/api/photo/${this.state.me.id})`}}></div>
+                            <div className="nickName">{this.state.me.nickname}</div>
+                        </div>
+
+                        <div className="settingsContainer">
+                            <div className="setting" onClick={this.handleLogOut} data-icon="shutdown" title="Log out"></div>
+                        </div>
+
                     </div>
                     <div className="middle">
                         <div className="searchContainer">
-                            <input type="search" placeholder="Search user" className="searchInput"/>
+                            <input type="search" data-icon="search" onChange={this.handleSetFilter} placeholder="Search user" className="searchInput"/>
                         </div>
                         
                         <div className="usersContainer">
                             <ul className="userUlList">
                                 {
-                                    //Array(20).fill(1)
-                                    
-                                    this.state.users.map((user, i) =>
-                                    <li key={i} className="userLi">
-                                    
-                                        {console.log(user)}
+                                    this.state.users.map((user, i) => {
+                                    let show = user.nickname.indexOf(this.state.filterUl) != -1 ||
+                                                 user.email.indexOf(this.state.filterUl) != -1
+                                        
+                                    return (<li key={i} className="userLi" style={{display: show || 'none'}}>
                                         <div style={{backgroundImage: `url(/api/photo/${user.id})`}} className="imageContainer"></div>
                                         <div className="infoContainer">
                                             <div className="nickName">{user.nickname}</div>
                                             <div className="email">{user.email}</div>
                                         </div>
-                                    </li>
-                                    )
+                                    </li>)
+                                    })
                                 }
                             </ul>
                         </div>
@@ -78,6 +108,14 @@ export default class ContentScreen extends Component {
                 </div>
             </div>
         )
+    }
+
+    handleSetFilter (event) {
+        let value = event.target.value
+
+        this.setState({
+            filterUl: value
+        })
     }
 
     handleLogOut () {

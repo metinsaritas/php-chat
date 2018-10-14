@@ -16,7 +16,7 @@ require '../../db.php';
 $router = new Request();
 
 $router->post('/login', function ($self) {
-    if (!empty($_SESSION["email"])) 
+    if (!empty(@$_SESSION["email"])) 
         return $self->success('You have already log in');
 
     extract($_POST);
@@ -93,10 +93,11 @@ $router->post('/signup', function($self) {
 });
 
 $router->get('/photo/?', function($self) {
+
     $id = $self->id;
     header('Content-Type: image/jpg');
     $tempPath = '../img/profile-temp.png';
-    if (!is_numeric($id)) 
+    if (empty(@$_SESSION["email"]) || !is_numeric($id)) 
     die(file_get_contents($tempPath));
     
     $exists = @file_get_contents('../../profile_photos/'.$id.'.jpg');
@@ -105,12 +106,16 @@ $router->get('/photo/?', function($self) {
 });
 
 $router->get('/users', function($self) {
-    if (empty($_SESSION["email"])) 
+    $email = @$_SESSION["email"];
+    if (empty($email)) 
         return $self->error('You have to log in');
-
+    
         /* @todo: where active */
     $users = R::getAll('SELECT id, email, date, nickname FROM user');
-    return $self->success('Success', [$users]);
+    return $self->success('Success', ['users' => $users, 
+                                      'me' => [
+                                          'email' => $email
+                                      ]]);
 });
 
 $jsonArr = $router->result($_SERVER);

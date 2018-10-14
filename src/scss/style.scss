@@ -24,11 +24,6 @@ body {
     clear: both;
 }
 
-[data-icon] {
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 .loading-bg {
     background-position: center;
     background-size: contain;
@@ -49,5 +44,15 @@ body {
     background: #cccccc; 
 }
 
+
+[data-icon] {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 [data-icon="email"] {background-image: url(../icon/email.png)}
 [data-icon="key"] {background-image: url(../icon/key.png)}
+[data-icon="shutdown"] {background-image: url(../icon/shutdown.png)}
+[data-icon="search"] {background-image: url(../icon/search.png)}
+[data-icon="emoji"] {background-image: url(../icon/emoji.png)}
+[data-icon="emoji-arrow"] {background-image: url(../icon/emoji-arrow.png)}
