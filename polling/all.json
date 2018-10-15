@@ -1,9 +1,14 @@
 {
-    "messages": [
-        {
+    "messages": {
+        "2-2-3@13132131": {
             "sender": "metinsaritas2@gmail.com",
             "message": "Hi everyone!",
             "time": "2-2-3"
+        }, 
+        "2-2-3@33213213": {
+            "sender": "a@gmail.com",
+            "message": "hello",
+            "time": "2-2-3"
         } 
-    ]
+    }
 }

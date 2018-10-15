@@ -131,6 +131,40 @@ $router->get('/ringtone', function($self) {
     die(readfile($ringtone));
 });
 
+$router->post("sendmessage", function($self) {
+    $email = @$_SESSION["email"];
+    if (!isset($email)) 
+        return $self->error('You have to log in');
+
+    $newmessage = @$_POST['message'];
+    if (!isset($newmessage))
+        return $self->error('Message cannot be empty');
+
+    $newsender = $email;
+    $newtime = date_timestamp_get(date_create());
+    $newkeytime = $newtime."@". rand(10000,99999);
+
+    /* lock the file */
+    $filepath = '../../polling/all.json';
+    if (!file_exists($filepath))
+        return $self->error('An error occured, please try again later');
+    
+    $read = file_get_contents($filepath);
+
+    $jsonArr = json_decode($read, true);
+    $messages = $jsonArr['messages'];
+
+    $messages[$newkeytime] = [
+        "sender" => $newsender,
+        "message" => $newmessage,
+        "time" => $newtime
+    ];
+
+    $updatedJson = json_encode($messages, JSON_PRETTY_PRINT);
+    file_put_contents($filepath, $updatedJson, LOCK_EX);
+    return $self->success('Success');   
+});
+
 $jsonArr = $router->result($_SERVER);
 
 echo json_encode($jsonArr, JSON_PRETTY_PRINT);;

@@ -28,6 +28,7 @@ export default class ContentScreen extends Component {
 
         this.handleLogOut = this.handleLogOut.bind(this)
         this.handleSetFilter = this.handleSetFilter.bind(this)
+        this.handleSendMessage = this.handleSendMessage.bind(this)
     }
 
     componentDidMount () {
@@ -178,7 +179,7 @@ export default class ContentScreen extends Component {
                                 <div className="chattext" ref="chattext" contentEditable={true}></div>
                             </div>
 
-                            <div className="send" data-icon="send" title="Send the message"></div>
+                            <div className="send" onClick={this.handleSendMessage} data-icon="send" title="Send the message"></div>
                         </div>
                     </div>
                 </div>
@@ -329,5 +330,21 @@ export default class ContentScreen extends Component {
         })
         .catch(err => console.log(err.message))
         .then(() => this.polling())
+    }
+
+    handleSendMessage () {
+        let params = new FormData()
+        params.append("message", "message in here");
+
+        axios({
+            method: 'POST',
+            url: '/api/sendmessage',
+            data: params
+        })
+        .then(response => reponse.data)
+        .then(json => {
+            if (json.error) return setTimeout(alert.bind(null, json.message), 1);
+        })
+        .catch(err => console.log(err))
     }
 }
