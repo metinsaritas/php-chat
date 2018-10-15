@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Log in | SZTEChat</title>
     
+    <link rel="shortcut icon" href="/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>

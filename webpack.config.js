@@ -34,6 +34,7 @@ module.exports = {
         open: true,
         proxy: {
             '/': 'http://localhost:80'
-        }
+        },
+        host: '192.168.1.65'
     },
 }

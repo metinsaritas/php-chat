@@ -89,7 +89,8 @@ $router->post('/signup', function($self) {
         return $self->error("An activation link has not been sent to {$email}. Try agarin", [$mail->ErrorInfo]);
     }*/
 
-    return $self->success("An activation link has been sent to {$email}.");
+    return $self->success("Successfully registered: {$email}");
+    //return $self->success("An activation link has been sent to {$email}.");
 });
 
 $router->get('/photo/?', function($self) {
@@ -144,7 +145,7 @@ $router->post("/sendmessage", function($self) {
     $newtime = date_timestamp_get(date_create());
     $newkeytime = $newtime."@". rand(10000,99999);
 
-    /* lock the file */
+    /* metinsaritas@todo: lock the file */
     $filepath = '../../polling/all.json';
     if (!file_exists($filepath))
         return $self->error('An error occured, please try again later');

@@ -40,12 +40,13 @@ try {
 
 			$fileRead = file_get_contents($file);
 
-			$fileAsJson = json_decode($fileRead);
+			$fileAsArr = json_decode($fileRead, true);
 
+			$messages = eliminateByTime($fileAsArr); 
 			die_json([
 				'error' => false,
 				'time' => $fileModifyTime, 
-				'content' => $fileAsJson
+				'content' => $messages
 			]);
 
 		}
@@ -66,4 +67,24 @@ try {
 function die_json ($arr) {
 	die(json_encode($arr, JSON_PRETTY_PRINT));
 	exit();
+}
+
+function eliminateByTime ($arr) {
+	$cookieTime = @$_COOKIE["lastUpdate"] ?? 0;
+	if ($cookieTime <= 0) return $arr;
+
+	$rMessages = [];
+	$messages = $arr['messages'];
+
+	foreach ($messages as $keytime => $data) {
+		$sender = $data['sender'];
+		$message = $data['message'];
+		$time = $data['time'];
+
+		if ($time <= $cookieTime) continue; 
+
+		$rMessages[$keytime] = $data;
+	}
+
+	return ['messages' => $rMessages];
 }

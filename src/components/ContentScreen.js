@@ -84,35 +84,6 @@ export default class ContentScreen extends Component {
                     
                     <div className={this.state.isShowingEmojiPanel ? 'messagesContainer open': 'messagesContainer'}>
                         <div ref="messagesArea" className="messagesArea">
-
-                            <div className="messageContainer">
-                                <div className="messageHolder">
-                                    <div className="name">Metin</div>
-                                    <span>Selamlar</span>
-                                </div>
-                            </div>
-
-                            <div className="messageContainer">
-                                <div className="messageHolder me">
-                                    <div className="name">Metin</div>
-                                    <span>Selamlar</span>
-                                </div>
-                            </div>
-
-                            <div className="messageContainer">
-                                <div className="messageHolder me">
-                                    <div className="name">Metin</div>
-                                    <span>Selamlar</span>
-                                </div>
-                            </div>
-
-                            <div className="messageContainer">
-                                <div className="messageHolder">
-                                    <div className="name">Metin</div>
-                                    <span>Selamlar</span>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
 
