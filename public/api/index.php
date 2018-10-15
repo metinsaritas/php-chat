@@ -131,7 +131,7 @@ $router->get('/ringtone', function($self) {
     die(readfile($ringtone));
 });
 
-$router->post("sendmessage", function($self) {
+$router->post("/sendmessage", function($self) {
     $email = @$_SESSION["email"];
     if (!isset($email)) 
         return $self->error('You have to log in');
@@ -160,8 +160,9 @@ $router->post("sendmessage", function($self) {
         "time" => $newtime
     ];
 
-    $updatedJson = json_encode($messages, JSON_PRETTY_PRINT);
-    file_put_contents($filepath, $updatedJson, LOCK_EX);
+    $write = ["messages" => $messages];
+    $updatedJson = json_encode($write, JSON_PRETTY_PRINT);
+    file_put_contents($filepath, $updatedJson, LOCK_EX); 
     return $self->success('Success');   
 });
 

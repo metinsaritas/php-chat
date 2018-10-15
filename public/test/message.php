@@ -17,7 +17,7 @@ $messages[$newkeytime] = [
 ];
 
 header('Content-Type: application/json');
-$jsonFinal = json_encode($messages, JSON_PRETTY_PRINT);
+$jsonFinal = json_encode(["messages" => $messages], JSON_PRETTY_PRINT);
 die($jsonFinal);
 /*
 foreach ($messages as $time => $data) {

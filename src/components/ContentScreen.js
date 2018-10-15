@@ -22,13 +22,14 @@ export default class ContentScreen extends Component {
             emojis: this.getEmojis(),
             isShowingEmojiPanel: false,
             audio,
-            isWindowFocused: false,
+            isWindowFocused: true,
             unreadMessageCount: 0
         }
 
         this.handleLogOut = this.handleLogOut.bind(this)
         this.handleSetFilter = this.handleSetFilter.bind(this)
         this.handleSendMessage = this.handleSendMessage.bind(this)
+        this.handleChatKeyDown = this.handleChatKeyDown.bind(this)
     }
 
     componentDidMount () {
@@ -82,43 +83,7 @@ export default class ContentScreen extends Component {
                     <div className="gradient"></div>
                     
                     <div className={this.state.isShowingEmojiPanel ? 'messagesContainer open': 'messagesContainer'}>
-                        <div className="messagesArea">
-
-                            <div className="messageContainer">
-                                <div className="messageHolder">Hello!</div>
-                            </div>
-
-                            <div className="messageContainer">
-                                <div className="messageHolder me">Szia!</div>
-                            </div>
-
-                            <div className="messageContainer">
-                                <div className="messageHolder me">Szia!</div>
-                            </div>
-
-                            <div className="messageContainer">
-                                <div className="messageHolder me">Szia!</div>
-                            </div>
-
-                            <div className="messageContainer">
-                                <div className="messageHolder me">Szia!</div>
-                            </div>
-
-                            <div className="messageContainer">
-                                <div className="messageHolder me">Szia!</div>
-                            </div>
-
-                            <div className="messageContainer">
-                                <div className="messageHolder me">Szia!</div>
-                            </div>
-
-                            <div className="messageContainer">
-                                <div className="messageHolder me">Szia!</div>
-                            </div>
-
-                            <div className="messageContainer">
-                                <div className="messageHolder me">Szia!</div>
-                            </div>
+                        <div ref="messagesArea" className="messagesArea">
 
                             <div className="messageContainer">
                                 <div className="messageHolder">
@@ -128,22 +93,24 @@ export default class ContentScreen extends Component {
                             </div>
 
                             <div className="messageContainer">
-                                <div className="messageHolder">
+                                <div className="messageHolder me">
                                     <div className="name">Metin</div>
-                                    <span>Merhaba</span>
+                                    <span>Selamlar</span>
                                 </div>
                             </div>
 
                             <div className="messageContainer">
-                                <div className="messageHolder me">Szia!</div>
+                                <div className="messageHolder me">
+                                    <div className="name">Metin</div>
+                                    <span>Selamlar</span>
+                                </div>
                             </div>
 
                             <div className="messageContainer">
-                                <div className="messageHolder me">Szia!</div>
-                            </div>
-
-                            <div className="messageContainer">
-                                <div className="messageHolder me">Szia!</div>
+                                <div className="messageHolder">
+                                    <div className="name">Metin</div>
+                                    <span>Selamlar</span>
+                                </div>
                             </div>
 
                         </div>
@@ -176,7 +143,7 @@ export default class ContentScreen extends Component {
 
                             <div className="chattextContainer">
                                 <span className="ph">Text a message</span>
-                                <div className="chattext" ref="chattext" contentEditable={true}></div>
+                                <div className="chattext" ref="chattext" onKeyDown={this.handleChatKeyDown} contentEditable={true}></div>
                             </div>
 
                             <div className="send" onClick={this.handleSendMessage} data-icon="send" title="Send the message"></div>
@@ -314,18 +281,52 @@ export default class ContentScreen extends Component {
             
             let {isWindowFocused, audio} = this.state
             
-            if (!isWindowFocused) {
-                this.setState(state => {
-                    return {
-                        unreadMessageCount: state.unreadMessageCount + 1
-                    }
-                })
-
-                let count = this.state.unreadMessageCount
-                let countText = count <= 0 ? '' : `(${count}) `
-                $('head title').text(`${countText}Chat | SZTEChat`)
-                
+            if (!isWindowFocused) {                
                 audio.pause(); audio.currentTime = 0; audio.play()
+            }
+
+            let { messagesArea } = this.refs 
+            let { messages } = json.content
+
+            let isScrollBottom = messagesArea.scrollHeight - messagesArea.scrollTop === messagesArea.clientHeight
+
+            Object.keys(messages).forEach(keytime => {
+                let { message, sender, time } = messages[keytime]
+                
+                let me = sender == localStorage.getItem('email')
+                let classMe = me ? ' me':''
+                let classSame = ''
+                
+                let lastMessageSender = $(messagesArea).find('.messageContainer:last .sender')
+                if (lastMessageSender.length) {
+                    classSame = lastMessageSender.html() == sender ? ' same': ''
+                }
+
+                $(messagesArea).append(
+                `<div class="messageContainer">
+                    <div class="messageHolder${classMe + classSame}">
+                        <div class="name">${sender}</div>
+                        <div class="sender hidden">${sender}</div>
+                        <span>${message}</span>
+                    </div>
+                </div>`
+                )
+
+                if (!isWindowFocused) { 
+                    this.setState(state => {
+                        return {
+                            unreadMessageCount: state.unreadMessageCount + 1
+                        }
+                    })
+
+                    let count = this.state.unreadMessageCount
+                    let countText = count <= 0 ? '' : `(${count}) `
+                    $('head title').text(`${countText}Chat | SZTEChat`)
+                }
+            })
+
+            if (isScrollBottom) {
+                messagesArea.scrollTop = messagesArea.scrollHeight
             }
         })
         .catch(err => console.log(err.message))
@@ -333,18 +334,33 @@ export default class ContentScreen extends Component {
     }
 
     handleSendMessage () {
+        let { chattext } = this.refs
+        let message = chattext.innerHTML.trim()
+        if (!message.length) return
+        
+        setTimeout(() => {
+            chattext.innerHTML = null
+        }, 1)
+
         let params = new FormData()
-        params.append("message", "message in here");
+        params.append("message", message);
 
         axios({
             method: 'POST',
             url: '/api/sendmessage',
             data: params
         })
-        .then(response => reponse.data)
+        .then(response => response.data)
         .then(json => {
             if (json.error) return setTimeout(alert.bind(null, json.message), 1);
+            
         })
-        .catch(err => console.log(err))
+        .catch(err => console.log(err.message))
+    }
+
+    handleChatKeyDown (event) {
+        if (event.which === 13 && !event.shiftKey) {
+            this.handleSendMessage()
+        }
     }
 }

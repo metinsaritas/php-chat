@@ -40,6 +40,9 @@ body {
   background-repeat: no-repeat;
   background-size: contain; }
 
+.hidden {
+  display: none; }
+
 [data-icon="email"] {
   background-image: url(../icon/email.png); }
 
