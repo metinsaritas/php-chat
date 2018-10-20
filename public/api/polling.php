@@ -70,7 +70,7 @@ function die_json ($arr) {
 }
 
 function eliminateByTime ($arr) {
-	$cookieTime = @$_COOKIE["lastUpdate"] ?? 0;
+	$cookieTime = @$_COOKIE["lastUpdate"];
 	if ($cookieTime <= 0) return $arr;
 
 	$rMessages = [];

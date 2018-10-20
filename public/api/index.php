@@ -71,7 +71,7 @@ $router->post('/signup', function($self) {
     $mail->Host = "smtp.gmail.com";
     $mail->SMTPAuth = true;
     $mail->Username = "metinsaritas2@gmail.com";
-    $mail->Password = "joinface";
+    $mail->Password = "pass";
     
     $mail->From = $email;
     $mail->FromName = "Mailer";

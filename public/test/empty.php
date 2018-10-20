@@ -1,5 +1,7 @@
 <?php
+$t = @$_COOKIE["lastUpdate"];
 
-$t = $_COOKIE["lastUpdate"] ?? 0;
+if ($t <= 0) echo('e'); else echo('h');
+
 
 var_dump($t);
