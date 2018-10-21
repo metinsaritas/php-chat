@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import './ContentScreen.scss'
 
 import axios from 'axios'
+window.axios = axios
 import $ from 'jquery'
 window.$ = $
 
@@ -128,7 +129,7 @@ export default class ContentScreen extends Component {
 
                         <div className="title">
                             <div className="imageContainer" style={{backgroundImage: `url(/api/photo/${this.state.me.id})`}}>
-                                <div className="status"></div>
+                                {/*<div className="status"></div>*/}
                             </div>
 
                             <div className="nickName">{this.state.me.nickname}</div>
@@ -147,14 +148,17 @@ export default class ContentScreen extends Component {
                         <div className="usersContainer">
                             <ul className="userUlList">
                                 {
-                                    this.state.users.map((user, i) => {
+                                [...this.state.users]
+                                    .sort((a, b) => b.online || 0 - a.online || 0)
+                                    .map((user, i) => {
+
                                     let show = user.nickname.indexOf(this.state.filterUl) != -1 ||
                                                  user.email.indexOf(this.state.filterUl) != -1
                                         
                                     return (
                                     <li key={i} className="userLi" style={{display: show || 'none'}}>
                                         <div style={{backgroundImage: `url(/api/photo/${user.id})`}} className="imageContainer">
-                                            <div className="status"></div>
+                                            <div className={user.online ? 'status online' : 'status'}></div>
                                         </div>
                                         <div className="infoContainer">
                                             <div className="nickName">{user.nickname}</div>
@@ -248,7 +252,8 @@ export default class ContentScreen extends Component {
     polling () {
         axios({
             method: 'GET',
-            url: '/api/polling.php'
+            //url: '/api/polling.php'
+            url: '/test/online.php'
         })
         .then(result => result.data)
         .then(json => {
@@ -256,6 +261,21 @@ export default class ContentScreen extends Component {
             if (json.error === true) throw new Error(json.message || 'An undefined error')
             if (!json.content) throw new Error('content is empty')
             
+            if (json.type == 'online') {
+                let onlineUsers = json.content;
+                let users = [...this.state.users]
+                users.forEach((user, i) => {
+                    users[i].online = onlineUsers.hasOwnProperty(user.email) ? 1 : 0
+                })
+                
+                this.setState({
+                    users
+                })
+                return;
+            }
+
+            /* else json.type == "messages" */
+
             let {isWindowFocused, audio} = this.state
             
             if (!isWindowFocused) {                

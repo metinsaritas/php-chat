@@ -111,12 +111,41 @@ $router->get('/users', function($self) {
     if (empty($email)) 
         return $self->error('You have to log in');
     
-        /* @todo: where active */
+    $filepath = '../../polling/online.json';
+    $file = @file_get_contents($filepath);
+    $jsonOnline = @json_decode($file, true);
+
+    $time = date_timestamp_get(date_create());
+    $jsonOnline[$email] = ["last_time" => $time];
+
+    
+    $updatedJson = json_encode($jsonOnline, JSON_PRETTY_PRINT);
+    @file_put_contents($filepath, $updatedJson, LOCK_EX);
+
     $users = R::getAll('SELECT id, email, date, nickname FROM user');
+    
+    $totalOnline = count(array_keys($jsonOnline));
+    $count = 0;
+    try {
+        foreach ($users as $index => $user) {
+            $umail = $user["email"];
+            if (array_key_exists($user["email"], $jsonOnline)) {
+                $users[$index]["online"] = 1;
+                $count++;
+            }
+
+            if ($count == $totalOnline) {
+                break;
+            }
+        }
+    } catch (Exception $ex) {}
+
+        /* metinsaritas@todo: where active */
     return $self->success('Success', ['users' => $users, 
                                       'me' => [
                                           'email' => $email
-                                      ]]);
+                                        ]
+                                      ]);
 });
 
 $router->get('/ringtone', function($self) {

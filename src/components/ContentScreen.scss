@@ -151,10 +151,14 @@
                                 position: absolute;
                                 width: 12px;
                                 height: 12px;
-                                background: #04ad04;
+                                background: #948888;
                                 border-radius: 50%;
                                 right: 0px;
                                 bottom: 4px;
+
+                                &.online {
+                                    background: #04ad04;
+                                }
 
                                 &.offline {
                                     background: #948888;
