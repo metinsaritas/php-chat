@@ -127,7 +127,10 @@ export default class ContentScreen extends Component {
                     <div className="header">
 
                         <div className="title">
-                            <div className="imageContainer" style={{backgroundImage: `url(/api/photo/${this.state.me.id})`}}></div>
+                            <div className="imageContainer" style={{backgroundImage: `url(/api/photo/${this.state.me.id})`}}>
+                                <div className="status"></div>
+                            </div>
+
                             <div className="nickName">{this.state.me.nickname}</div>
                         </div>
 
@@ -148,8 +151,11 @@ export default class ContentScreen extends Component {
                                     let show = user.nickname.indexOf(this.state.filterUl) != -1 ||
                                                  user.email.indexOf(this.state.filterUl) != -1
                                         
-                                    return (<li key={i} className="userLi" style={{display: show || 'none'}}>
-                                        <div style={{backgroundImage: `url(/api/photo/${user.id})`}} className="imageContainer"></div>
+                                    return (
+                                    <li key={i} className="userLi" style={{display: show || 'none'}}>
+                                        <div style={{backgroundImage: `url(/api/photo/${user.id})`}} className="imageContainer">
+                                            <div className="status"></div>
+                                        </div>
                                         <div className="infoContainer">
                                             <div className="nickName">{user.nickname}</div>
                                             <div className="email">{user.email}</div>

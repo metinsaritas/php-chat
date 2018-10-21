@@ -34,6 +34,25 @@
                     background-repeat: no-repeat;
                     background-size: contain;
                     background-image: url(/api/photo/default);
+                    position: relative;
+
+                    .status {
+                        position: absolute;
+                        width: 12px;
+                        height: 12px;
+                        background: #04ad04;
+                        border-radius: 50%;
+                        right: 0px;
+                        bottom: 4px;
+
+                        &.passive {
+                            background: #948888;
+                        }
+
+                        &.bussy {
+                            background: orange;
+                        }
+                    }
                 }
 
                 .nickName {
@@ -126,6 +145,25 @@
                             background-repeat: no-repeat;
                             background-size: contain;
                             background-image: url(~/api/photo/default);
+                            position: relative;
+
+                            .status {
+                                position: absolute;
+                                width: 12px;
+                                height: 12px;
+                                background: #04ad04;
+                                border-radius: 50%;
+                                right: 0px;
+                                bottom: 4px;
+
+                                &.offline {
+                                    background: #948888;
+                                }
+
+                                &.busy {
+                                    background: orange;
+                                }
+                            }
                         }
 
                         &:last-child .infoContainer {
