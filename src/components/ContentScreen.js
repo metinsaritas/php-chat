@@ -99,7 +99,7 @@ export default class ContentScreen extends Component {
                                         let css = isObj ? em.css : em
                                         let title = isObj ? (em.title || em.css) : em
                                         return (
-                                        <div onClick={this.handleSetEmoji.bind(this, i)} key={i} className="emoji" title={title}>
+                                        <div onClick={this.handleSetEmoji.bind(this, i)} key={i} className="emoji" title={`:${title}:`}>
                                             <i className={`em em-${css}`}></i>
                                         </div>)
                                         })
@@ -193,7 +193,7 @@ export default class ContentScreen extends Component {
         let css = isObj ? em.css : em
         let title = isObj ? (em.title || em.css) : em
 
-        let emojiEl = `<span contenteditable="false" class="${`em em-${css}`} emoji" title="${title}"></span>`
+        let emojiEl = `<span contenteditable="false" data-type="emoji" class="${`em em-${css}`} emoji" title=":${title}:">:${css}:</span>`
         chattext.innerHTML += emojiEl
         /*
         let sel, range, html;
@@ -269,16 +269,58 @@ export default class ContentScreen extends Component {
                 let classSame = ''
                 
                 let lastMessageSender = $(messagesArea).find('.messageContainer:last .sender')
+                
+                
                 if (lastMessageSender.length) {
                     classSame = lastMessageSender.html() == sender ? ' same': ''
                 }
 
+                let avatar = classSame ? '' : `<div class="avatar"></div>`
+
+                let tempMessage = message
+                let editedMessage = message
+
+                let regex = /:(.*?):/gmi
+                let i
+                let objIcons = []
+                do {
+                    i = regex.exec(message)
+                    if (!i || i[0].indexOf(' ') != -1)
+                        continue
+
+                    if (objIcons.hasOwnProperty(i[1]))
+                        continue
+                    let title
+                    let css = title = i[1]
+                    
+                    let bigClass = i.input.trim() == i[0] ? " big" : ""
+                    let emojiTemplate = `<span contenteditable="false" data-type="emoji" class="${`em em-${css}`} emoji${bigClass}" title=":${title}:">:${css}:</span>`
+                    
+                    objIcons[i[1]] = emojiTemplate
+                } while (i)
+
+                Object.keys(objIcons).forEach((key, i) => {
+                    if (this.state.emojis.indexOf(key) == -1) {
+                        return
+                    }
+                    editedMessage = editedMessage.replace(new RegExp(`:${key}:`, 'g'), objIcons[key])
+                })
+
+                let date = new Date(time * 1000)
+                let hours = date.getHours()
+                hours = hours < 10 ? `0${hours}` : hours
+                
+                let minutes = date.getMinutes()
+                minutes = minutes < 10 ? `0${minutes}` : minutes
+
                 $(messagesArea).append(
                 `<div class="messageContainer">
                     <div class="messageHolder${classMe + classSame}">
+                        ${avatar}
                         <div class="name">${sender}</div>
                         <div class="sender hidden">${sender}</div>
-                        <span>${message}</span>
+                        <span>${editedMessage}</span>
+                        <div class="time" title="${date.toString()}">${hours+":"+minutes}</div>
                     </div>
                 </div>`
                 )
@@ -331,6 +373,7 @@ export default class ContentScreen extends Component {
 
     handleChatKeyDown (event) {
         if (event.which === 13 && !event.shiftKey) {
+            this.setState({isShowingEmojiPanel: false})
             this.handleSendMessage()
         }
     }

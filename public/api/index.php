@@ -138,7 +138,9 @@ $router->post("/sendmessage", function($self) {
         return $self->error('You have to log in');
 
     $newmessage = @$_POST['message'];
-    if (!isset($newmessage))
+    $newmessage = $newmessage ? strip_tags($newmessage) : null;
+    $newmessage = trim($newmessage);
+    if (empty($newmessage))
         return $self->error('Message cannot be empty');
 
     $newsender = $email;

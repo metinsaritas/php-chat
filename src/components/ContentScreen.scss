@@ -207,6 +207,16 @@
                     position: relative;
                     clear: both;
 
+                    .emoji {
+                        color: transparent !important;
+                        font-size: 0px !important;
+                        padding: 10px;
+
+                        &.big {
+                            padding: 20px;
+                        }
+                    }
+
                     .messageHolder {
                         float: left;
                         background-color: #ffffff;
@@ -215,7 +225,7 @@
                         color: black;
                         border-radius: 8px;
                         width: auto;
-                        padding:6px 7px 8px 9px;
+                        padding:6px 7px 15px 9px;
                         border-radius: 0px 7.5px 7.5px 7.5px;
                         box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
                         position: relative;
@@ -231,6 +241,30 @@
                             font-size: 12px;
                             font-weight: bold;
                             color: $colorSzte;
+                        }
+
+                        .time {
+                            position: absolute;
+                            bottom: 0px;
+                            right: 7px;
+                            font-size: 10px;
+                            color: gray;
+                            font-family: 'Open Sans';
+                            cursor: help;
+                        }
+
+                        .avatar {
+                            background: transparent;
+                            position: absolute;
+                            top: 0;
+                            right: -36px;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 100%;
+                            background-image: url(~/api/photo/default);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: contain;
                         }
 
                         &::after {
@@ -259,6 +293,11 @@
                                 right: -12px;
                                 left: unset;
                                 background-image: url(~/icon/tail-me.png);
+                            }
+
+                            .avatar {
+                                left: -36px;
+                                right: unset;
                             }
                         }
 
@@ -387,11 +426,8 @@
                         .emoji {
                             width: 24px;
                             height: 24px;
-                            user-select: none;
-
-                            i {
-                                font-style: normal;
-                            }
+                            color: transparent !important;
+                            font-size: 0px !important;
                         }
                     }
 
