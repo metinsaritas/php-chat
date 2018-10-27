@@ -24,7 +24,9 @@ export default class ContentScreen extends Component {
             isShowingEmojiPanel: false,
             audio,
             isWindowFocused: true,
-            unreadMessageCount: 0
+            unreadMessageCount: 0,
+            fileModifyTime: 0,
+            ofileModifyTime: 0,
         }
 
         this.handleLogOut = this.handleLogOut.bind(this)
@@ -221,25 +223,9 @@ export default class ContentScreen extends Component {
     }
 
     getEmojis () {
-        return [{css: 'smiley', title: 'Smiley'}, 'mosque','flag-tr','flag-hu','innocent',
+        //{css: 'smiley', title: 'Smiley'}
+        return ['smiley', 'mosque','flag-tr','flag-hu','innocent',
         
-            'mosque','flag-tr','flag-hu','innocent',
-            'mosque','flag-tr','flag-hu','innocent',
-            'mosque','flag-tr','flag-hu','innocent',
-            'mosque','flag-tr','flag-hu','innocent',
-            'mosque','flag-tr','flag-hu','innocent',
-            'mosque','flag-tr','flag-hu','innocent',
-            'mosque','flag-tr','flag-hu','innocent',
-            'mosque','flag-tr','flag-hu','innocent',
-            'mosque','flag-tr','flag-hu','innocent',
-            'mosque','flag-tr','flag-hu','innocent',
-            'mosque','flag-tr','flag-hu','innocent',
-            'mosque','flag-tr','flag-hu','innocent',
-            'mosque','flag-tr','flag-hu','innocent',
-            'mosque','flag-tr','flag-hu','innocent',
-            'mosque','flag-tr','flag-hu','innocent',
-            'mosque','flag-tr','flag-hu','innocent',
-
         ]
     }
 
@@ -250,10 +236,17 @@ export default class ContentScreen extends Component {
     }
 
     polling () {
+
+        let timestamp = Math.floor(new Date().getTime() / 1000)
+        let params = new FormData()
+        params.append("fileModifyTime", this.state.fileModifyTime || timestamp);
+        params.append("ofileModifyTime", this.state.ofileModifyTime || timestamp);
+
         axios({
-            method: 'GET',
+            method: 'POST',
             //url: '/api/polling.php'
-            url: '/test/online.php'
+            url: '/test/online.php',
+            data: params
         })
         .then(result => result.data)
         .then(json => {
@@ -264,17 +257,25 @@ export default class ContentScreen extends Component {
             if (json.type == 'online') {
                 let onlineUsers = json.content;
                 let users = [...this.state.users]
+
+                let ofileModifyTime = json.ofileModifyTime || 0
                 users.forEach((user, i) => {
                     users[i].online = onlineUsers.hasOwnProperty(user.email) ? 1 : 0
                 })
                 
                 this.setState({
-                    users
+                    users,
+                    ofileModifyTime
                 })
                 return;
             }
 
             /* else json.type == "messages" */
+            let { fileModifyTime } = json
+            debugger
+            this.setState({
+                fileModifyTime
+            })
 
             let {isWindowFocused, audio} = this.state
             

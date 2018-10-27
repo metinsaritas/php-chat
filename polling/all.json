@@ -1,1304 +1,199 @@
 {
     "messages": {
-        "1539580684@94287": {
+        "1540659390@97633": {
             "sender": "metinsaritas2@gmail.com",
-            "message": "Hi!",
-            "time": 1539580684
+            "message": "9",
+            "time": 1540659390
         },
-        "1539580688@54280": {
+        "1540659391@44274": {
             "sender": "metinsaritas2@gmail.com",
-            "message": "How are you guys?",
-            "time": 1539580688
+            "message": "0",
+            "time": 1540659391
         },
-        "1539580696@63104": {
+        "1540659433@43891": {
             "sender": "metinsaritas2@gmail.com",
-            "message": "Are you there?",
-            "time": 1539580696
+            "message": "1",
+            "time": 1540659433
         },
-        "1539580852@60725": {
+        "1540659434@11438": {
             "sender": "metinsaritas2@gmail.com",
-            "message": "Hello there",
-            "time": 1539580852
+            "message": "2",
+            "time": 1540659434
         },
-        "1539580860@71065": {
+        "1540659434@89268": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "3",
+            "time": 1540659434
+        },
+        "1540659434@50429": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "4",
+            "time": 1540659434
+        },
+        "1540659434@82717": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "5",
+            "time": 1540659434
+        },
+        "1540659435@57965": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "6",
+            "time": 1540659435
+        },
+        "1540659435@30223": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "7",
+            "time": 1540659435
+        },
+        "1540659435@49771": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "8",
+            "time": 1540659435
+        },
+        "1540659436@35422": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "9",
+            "time": 1540659436
+        },
+        "1540659490@94025": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "clear",
+            "time": 1540659490
+        },
+        "1540659492@24131": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "1",
+            "time": 1540659492
+        },
+        "1540659492@66575": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "2",
+            "time": 1540659492
+        },
+        "1540659492@49833": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "3",
+            "time": 1540659492
+        },
+        "1540659493@54529": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "4",
+            "time": 1540659493
+        },
+        "1540659493@17602": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "5",
+            "time": 1540659493
+        },
+        "1540659493@75402": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "6",
+            "time": 1540659493
+        },
+        "1540659493@52745": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "7",
+            "time": 1540659493
+        },
+        "1540659494@67795": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "8",
+            "time": 1540659494
+        },
+        "1540659494@99676": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "9",
+            "time": 1540659494
+        },
+        "1540659504@30712": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "....",
+            "time": 1540659504
+        },
+        "1540659505@14150": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "1",
+            "time": 1540659505
+        },
+        "1540659505@62093": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "2",
+            "time": 1540659505
+        },
+        "1540659505@91975": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "3",
+            "time": 1540659505
+        },
+        "1540659505@52732": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "4",
+            "time": 1540659505
+        },
+        "1540659506@73240": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "5",
+            "time": 1540659506
+        },
+        "1540659506@78865": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "6",
+            "time": 1540659506
+        },
+        "1540659506@92328": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "7",
+            "time": 1540659506
+        },
+        "1540659507@15445": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "8",
+            "time": 1540659507
+        },
+        "1540659507@61852": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "9",
+            "time": 1540659507
+        },
+        "1540659507@90387": {
+            "sender": "metinsaritas2@gmail.com",
+            "message": "0",
+            "time": 1540659507
+        },
+        "1540660874@19343": {
             "sender": "a@gmail.com",
-            "message": "hi bro",
-            "time": 1539580860
-        },
-        "1539580868@29726": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "how are you today",
-            "time": 1539580868
-        },
-        "1539580873@78442": {
-            "sender": "a@gmail.com",
-            "message": "i'm fine and you?",
-            "time": 1539580873
-        },
-        "1539580877@25270": {
-            "sender": "a@gmail.com",
-            "message": "how?",
-            "time": 1539580877
-        },
-        "1539580886@15583": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "fine thank you",
-            "time": 1539580886
-        },
-        "1539581045@91084": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "<span contenteditable=\"false\" class=\"em em-flag-hu emoji\" title=\"flag-hu\"><\/span><span contenteditable=\"false\" class=\"em em-innocent emoji\" title=\"innocent\"><\/span>",
-            "time": 1539581045
-        },
-        "1539581108@14741": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "Szia, Mi a neved?",
-            "time": 1539581108
-        },
-        "1539581125@54644": {
-            "sender": "a@gmail.com",
-            "message": "A nevem Metin.",
-            "time": 1539581125
-        },
-        "1539581132@10731": {
-            "sender": "a@gmail.com",
-            "message": "is te?",
-            "time": 1539581132
-        },
-        "1539618775@47653": {
-            "sender": "metinsaritas2@gmail.com",
             "message": "hey",
-            "time": 1539618775
+            "time": 1540660874
         },
-        "1540073173@64307": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "<span contenteditable=\"false\" class=\"em em-flag-hu emoji\" title=\"flag-hu\"><\/span><span contenteditable=\"false\" class=\"em em-flag-hu emoji\" title=\"flag-hu\"><\/span><span contenteditable=\"false\" class=\"em em-innocent emoji\" title=\"innocent\"><\/span>",
-            "time": 1540073173
+        "1540660876@28601": {
+            "sender": "a@gmail.com",
+            "message": "a",
+            "time": 1540660876
         },
-        "1540073185@78049": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "<span contenteditable=\"false\" class=\"em em-flag-hu emoji\" title=\"flag-hu\"><\/span><span contenteditable=\"false\" class=\"em em-flag-hu emoji\" title=\"flag-hu\"><\/span><span contenteditable=\"false\" class=\"em em-innocent emoji\" title=\"innocent\"><\/span><b>selamlar<\/b>",
-            "time": 1540073185
+        "1540660877@43539": {
+            "sender": "a@gmail.com",
+            "message": "s",
+            "time": 1540660877
         },
-        "1540073225@17780": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "<b>asd<\/b><i><marquee>ups<\/marquee><\/i>",
-            "time": 1540073225
+        "1540660877@94770": {
+            "sender": "a@gmail.com",
+            "message": "d",
+            "time": 1540660877
         },
-        "1540076156@39619": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "merhaba&nbsp;:flag-hu:&nbsp;deneme",
-            "time": 1540076156
-        },
-        "1540076171@74912": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "selamlar size&nbsp;:innocent::innocent:",
-            "time": 1540076171
-        },
-        "1540076279@64731": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540076279
-        },
-        "1540079151@87509": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "merhaba&nbsp;:innocent:",
-            "time": 1540079151
-        },
-        "1540079160@52303": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540079160
-        },
-        "1540079163@60029": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":flag-tr::flag-tr:",
-            "time": 1540079163
-        },
-        "1540079243@99832": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":flag-tr::flag-tr:",
-            "time": 1540079243
-        },
-        "1540079650@10691": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "ndde&nbsp;:flag-tr::flag-hu:",
-            "time": 1540079650
-        },
-        "1540080003@52675": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":innocent:&nbsp;saf",
-            "time": 1540080003
-        },
-        "1540080013@72435": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":flag-tr::flag-tr:&nbsp;hey",
-            "time": 1540080013
-        },
-        "1540080032@83981": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":flag-tr:",
-            "time": 1540080032
-        },
-        "1540080102@24486": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "deneme&nbsp;:flag-hu::innocent:",
-            "time": 1540080102
-        },
-        "1540080301@91946": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":flag-tr::flag-tr:deneme ahha:innocent:",
-            "time": 1540080301
-        },
-        "1540080509@93795": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540080509
-        },
-        "1540080520@10627": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "how are y",
-            "time": 1540080520
-        },
-        "1540080522@77070": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "adsa",
-            "time": 1540080522
-        },
-        "1540080539@29712": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "heyow&nbsp;:flag-tr:",
-            "time": 1540080539
-        },
-        "1540080547@60857": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":flag-tr::flag-hu:",
-            "time": 1540080547
-        },
-        "1540080658@99335": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":mosque::mosque::flag-tr:",
-            "time": 1540080658
-        },
-        "1540080754@92080": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":innocent::innocent::mosque:",
-            "time": 1540080754
-        },
-        "1540080850@86702": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":innocent::innocent::flag-tr:&nbsp;deneme",
-            "time": 1540080850
-        },
-        "1540080903@63293": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":innocent::innocent::flag-tr:&nbsp;denemeText a messageseafasf",
-            "time": 1540080903
-        },
-        "1540081069@62231": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":innocent::innocent::flag-tr:",
-            "time": 1540081069
-        },
-        "1540081077@92107": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":smiley:",
-            "time": 1540081077
-        },
-        "1540081361@55575": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":flag-tr:",
-            "time": 1540081361
-        },
-        "1540081369@50279": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "deneme yaz\u0131lar\u0131&nbsp;:innocent:",
-            "time": 1540081369
-        },
-        "1540081495@28265": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "selam",
-            "time": 1540081495
-        },
-        "1540081502@64366": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "&lt;br&gt;hey",
-            "time": 1540081502
-        },
-        "1540081513@21824": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "&lt;script&gt;alert(123)&lt;\/script&gt;",
-            "time": 1540081513
-        },
-        "1540081533@78810": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "alert(123)",
-            "time": 1540081533
-        },
-        "1540081543@72372": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "haha&nbsp;:innocent::innocent:",
-            "time": 1540081543
-        },
-        "1540081546@48100": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":innocent:",
-            "time": 1540081546
-        },
-        "1540081607@67647": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":Smiley::Smiley::mosque::flag-hu:",
-            "time": 1540081607
-        },
-        "1540081628@71580": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":denemler:",
-            "time": 1540081628
-        },
-        "1540081749@81106": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":smiley::smiley::mosque::flag-tr:",
-            "time": 1540081749
-        },
-        "1540081763@85102": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "import React, { Component } from 'react'import '.\/ContentScreen.scss'import axios from 'axios'import $ from 'jquery'window.$ = $export default class ContentScreen extends Component {    constructor (props) {        super(props)        let audio = new Audio()        audio.autoplay = false        audio.src = '\/api\/ringtone'        this.state = {            users: [],            me: {},            filterUl: '',            emojis: this.getEmojis(),            isShowingEmojiPanel: false,            audio,            isWindowFocused: true,            unreadMessageCount: 0        }        this.handleLogOut = this.handleLogOut.bind(this)        this.handleSetFilter = this.handleSetFilter.bind(this)        this.handleSendMessage = this.handleSendMessage.bind(this)        this.handleChatKeyDown = this.handleChatKeyDown.bind(this)    }    componentDidMount () {        $(window).on('focus', () =&gt; {            this.setState({                isWindowFocused: true,                unreadMessageCount: 0            })            $('head title').text('Chat | SZTEChat')        })        $(window).on('blur', () =&gt; {            this.setState({                isWindowFocused: false            })        })        axios({            method: 'GET',            url: '\/api\/users'        }).then(result =&gt; result.data)        .then(json =&gt; {            if (json.error) return console.warn(json.message);            let {me, users} = json.details            this.setState({                users: users.filter(user =&gt; {                    if (user.email != me.email)                    return true                    json.details.me = user                    return false                }),                me: json.details.me            })            this.polling.bind(this).call()        })        .catch(err =&gt; console.warn(err))        .then(() =&gt; {            $('#react-loading').remove()            $('#pleaseWait').remove()        })    }    render () {        return (            &lt;div id=\"ContentScreen\"&gt;                                &lt;div className=\"rightSide\"&gt;                    &lt;div className=\"gradient\"&gt;&lt;\/div&gt;                                        &lt;div className={this.state.isShowingEmojiPanel ? 'messagesContainer open': 'messagesContainer'}&gt;                        &lt;div ref=\"messagesArea\" className=\"messagesArea\"&gt;                        &lt;\/div&gt;                    &lt;\/div&gt;                    &lt;div className={this.state.isShowingEmojiPanel ? 'chatContainer open': 'chatContainer'}&gt;                        &lt;div className=\"emojiContainer\"&gt;                            &lt;div className=\"emojis\"&gt;                                {                                    this.state.emojis                                    .map((emoji, i) =&gt; {                                        let em = emoji                                        let isObj = typeof em === 'object'                                        let css = isObj ? em.css : em                                        let title = isObj ? (em.title || em.css) : em                                        return (                                        &lt;div onClick={this.handleSetEmoji.bind(this, i)} key={i} className=\"emoji\" title={`:${title}:`}&gt;                                            &lt;i className={`em em-${css}`}&gt;&lt;\/i&gt;                                        &lt;\/div&gt;)                                        })                                }                            &lt;\/div&gt;                        &lt;\/div&gt;                        &lt;div className=\"container\"&gt;                            &lt;div className=\"emoji-opener\" data-icon={`emoji${this.state.isShowingEmojiPanel?'-arrow':''}`} title=\"Emojis\"                            onClick={this.toggleEmojiPanel.bind(this)}                            &gt;&lt;\/div&gt;                            &lt;div className=\"chattextContainer\"&gt;                                &lt;span className=\"ph\"&gt;Text a message&lt;\/span&gt;                                &lt;div className=\"chattext\" ref=\"chattext\" onKeyDown={this.handleChatKeyDown} contentEditable={true}&gt;&lt;\/div&gt;                            &lt;\/div&gt;                            &lt;div className=\"send\" onClick={this.handleSendMessage} data-icon=\"send\" title=\"Send the message\"&gt;&lt;\/div&gt;                        &lt;\/div&gt;                    &lt;\/div&gt;                &lt;\/div&gt;                &lt;div className=\"leftSide\"&gt;                                        &lt;div className=\"header\"&gt;                        &lt;div className=\"title\"&gt;                            &lt;div className=\"imageContainer\" style={{backgroundImage: `url(\/api\/photo\/${this.state.me.id})`}}&gt;&lt;\/div&gt;                            &lt;div className=\"nickName\"&gt;{this.state.me.nickname}&lt;\/div&gt;                        &lt;\/div&gt;                        &lt;div className=\"settingsContainer\"&gt;                            &lt;div className=\"setting\" onClick={this.handleLogOut} data-icon=\"shutdown\" title=\"Log out\"&gt;&lt;\/div&gt;                        &lt;\/div&gt;                    &lt;\/div&gt;                    &lt;div className=\"middle\"&gt;                        &lt;div className=\"searchContainer\"&gt;                            &lt;input type=\"search\" data-icon=\"search\" onChange={this.handleSetFilter} placeholder=\"Search user\" className=\"searchInput\"\/&gt;                        &lt;\/div&gt;                                                &lt;div className=\"usersContainer\"&gt;                            &lt;ul className=\"userUlList\"&gt;                                {                                    this.state.users.map((user, i) =&gt; {                                    let show = user.nickname.indexOf(this.state.filterUl) != -1 ||                                                 user.email.indexOf(this.state.filterUl) != -1                                                                            return (&lt;li key={i} className=\"userLi\" style={{display: show || 'none'}}&gt;                                        &lt;div style={{backgroundImage: `url(\/api\/photo\/${user.id})`}} className=\"imageContainer\"&gt;&lt;\/div&gt;                                        &lt;div className=\"infoContainer\"&gt;                                            &lt;div className=\"nickName\"&gt;{user.nickname}&lt;\/div&gt;                                            &lt;div className=\"email\"&gt;{user.email}&lt;\/div&gt;                                        &lt;\/div&gt;                                    &lt;\/li&gt;)                                    })                                }                            &lt;\/ul&gt;                        &lt;\/div&gt;                    &lt;\/div&gt;                &lt;\/div&gt;            &lt;\/div&gt;        )    }    handleSetFilter (event) {        let value = event.target.value        this.setState({            filterUl: value        })    }    handleLogOut () {        axios({            method: 'DELETE',            url: '\/api\/logout'        }).then(result =&gt; result.data)        .then(json =&gt; {            window.location.reload()        })        .catch(err =&gt; console.log(err))    }    handleSetEmoji (i) {        let chattext = this.refs.chattext        let em = this.state.emojis[i]        let isObj = typeof em === 'object'        let css = isObj ? em.css : em        let title = isObj ? (em.title || em.css) : em        let emojiEl = `&lt;span contenteditable=\"false\" data-type=\"emoji\" class=\"${`em em-${css}`} emoji\" title=\":${title}:\"&gt;:${css}:&lt;\/span&gt;`        chattext.innerHTML += emojiEl        \/*        let sel, range, html;        if (window.getSelection) {            sel = window.getSelection();            if (sel.getRangeAt &amp;&amp; sel.rangeCount) {                range = sel.getRangeAt(0);                range.deleteContents();                range.insertNode( document.createTextNode(emojiEl) );            }        } else if (document.selection &amp;&amp; document.selection.createRange) {            document.selection.createRange().text = emojiEl;        }*\/            }    getEmojis () {        return [{css: 'smiley', title: 'Smiley'}, 'mosque','flag-tr','flag-hu','innocent',                    'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',        ]    }    toggleEmojiPanel () {        this.setState(state =&gt; {            return {isShowingEmojiPanel: !state.isShowingEmojiPanel}        })    }    polling () {        axios({            method: 'GET',            url: '\/api\/polling.php'        })        .then(result =&gt; result.data)        .then(json =&gt; {            if (!json.hasOwnProperty('error')) return \/*throw*\/ new Error('not a json')            if (json.error === true) throw new Error(json.message || 'An undefined error')            if (!json.content) throw new Error('content is empty')                        let {isWindowFocused, audio} = this.state                        if (!isWindowFocused) {                                audio.pause(); audio.currentTime = 0; audio.play()            }            let { messagesArea } = this.refs             let { messages } = json.content            let isScrollBottom = messagesArea.scrollHeight - messagesArea.scrollTop === messagesArea.clientHeight            Object.keys(messages).forEach(keytime =&gt; {                let { message, sender, time } = messages[keytime]                                let me = sender == localStorage.getItem('email')                let classMe = me ? ' me':''                let classSame = ''                                let lastMessageSender = $(messagesArea).find('.messageContainer:last .sender')                if (lastMessageSender.length) {                    classSame = lastMessageSender.html() == sender ? ' same': ''                }                let tempMessage = message                let editedMessage = message                let regex = \/:(.*?):\/gmi                let i                let objIcons = []                do {                    i = regex.exec(message)                    if (!i || i[0].indexOf(' ') != -1)                        continue                    if (objIcons.hasOwnProperty(i[1]))                        continue                    let title                    let css = title = i[1]                                        let bigClass = i.input.trim() == i[0] ? \" big\" : \"\"                    let emojiTemplate = `&lt;span contenteditable=\"false\" data-type=\"emoji\" class=\"${`em em-${css}`} emoji${bigClass}\" title=\":${title}:\"&gt;:${css}:&lt;\/span&gt;`                                        objIcons[i[1]] = emojiTemplate                } while (i)                Object.keys(objIcons).forEach((key, i) =&gt; {                    editedMessage = editedMessage.replace(new RegExp(`:${key}:`, 'g'), objIcons[key])                })                $(messagesArea).append(                `&lt;div class=\"messageContainer\"&gt;                    &lt;div class=\"messageHolder${classMe + classSame}\"&gt;                        &lt;div class=\"name\"&gt;${sender}&lt;\/div&gt;                        &lt;div class=\"sender hidden\"&gt;${sender}&lt;\/div&gt;                        &lt;span&gt;${editedMessage}&lt;\/span&gt;                    &lt;\/div&gt;                &lt;\/div&gt;`                )                if (!isWindowFocused) {                     this.setState(state =&gt; {                        return {                            unreadMessageCount: state.unreadMessageCount + 1                        }                    })                    let count = this.state.unreadMessageCount                    let countText = count &lt;= 0 ? '' : `(${count}) `                    $('head title').text(`${countText}Chat | SZTEChat`)                }            })            if (isScrollBottom) {                messagesArea.scrollTop = messagesArea.scrollHeight            }        })        .catch(err =&gt; console.log(err.message))        .then(() =&gt; this.polling())    }    handleSendMessage () {        let { chattext } = this.refs        let message = chattext.innerHTML.trim()        if (!message.length) return                setTimeout(() =&gt; {            chattext.innerHTML = null        }, 1)        let params = new FormData()        params.append(\"message\", message);        axios({            method: 'POST',            url: '\/api\/sendmessage',            data: params        })        .then(response =&gt; response.data)        .then(json =&gt; {            if (json.error) return setTimeout(alert.bind(null, json.message), 1);                    })        .catch(err =&gt; console.log(err.message))    }    handleChatKeyDown (event) {        if (event.which === 13 &amp;&amp; !event.shiftKey) {            this.setState({isShowingEmojiPanel: false})            this.handleSendMessage()        }    }}",
-            "time": 1540081763
-        },
-        "1540081782@44849": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "saha",
-            "time": 1540081782
-        },
-        "1540081843@77677": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":smiley::smiley::mosque::flag-tr:",
-            "time": 1540081843
-        },
-        "1540082101@56062": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":flag-tr:",
-            "time": 1540082101
-        },
-        "1540082106@31342": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":mosque::flag-tr::flag-hu:",
-            "time": 1540082106
-        },
-        "1540082153@92932": {
+        "1540660891@34090": {
             "sender": "a@gmail.com",
             "message": "hellow",
-            "time": 1540082153
+            "time": 1540660891
         },
-        "1540082157@81015": {
+        "1540660892@49692": {
             "sender": "a@gmail.com",
-            "message": ":flag-tr::flag-hu:",
-            "time": 1540082157
+            "message": "to you",
+            "time": 1540660892
         },
-        "1540082167@11564": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":mosque::mosque:",
-            "time": 1540082167
-        },
-        "1540082561@37866": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "deneme&nbsp;:mosque:asf:flag-tr:&nbsp;fas",
-            "time": 1540082561
-        },
-        "1540082614@76032": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":innocent:",
-            "time": 1540082614
-        },
-        "1540083449@67181": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540083449
-        },
-        "1540083496@91541": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":innocent:",
-            "time": 1540083496
-        },
-        "1540083531@30576": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "merhabalar nas\u0131ls\u0131n\u0131z",
-            "time": 1540083531
-        },
-        "1540083600@93754": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "asd",
-            "time": 1540083600
-        },
-        "1540084071@28139": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540084071
-        },
-        "1540084078@51891": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "are u there?",
-            "time": 1540084078
-        },
-        "1540084115@92162": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey&nbsp;",
-            "time": 1540084115
-        },
-        "1540084120@69374": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "are u there",
-            "time": 1540084120
-        },
-        "1540084148@12977": {
-            "sender": "a@gmail.com",
-            "message": "yes i am",
-            "time": 1540084148
-        },
-        "1540084223@36323": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "import React, { Component } from 'react'import '.\/ContentScreen.scss'import axios from 'axios'import $ from 'jquery'window.$ = $export default class ContentScreen extends Component {    constructor (props) {        super(props)        let audio = new Audio()        audio.autoplay = false        audio.src = '\/api\/ringtone'        this.state = {            users: [],            me: {},            filterUl: '',            emojis: this.getEmojis(),            isShowingEmojiPanel: false,            audio,            isWindowFocused: true,            unreadMessageCount: 0        }        this.handleLogOut = this.handleLogOut.bind(this)        this.handleSetFilter = this.handleSetFilter.bind(this)        this.handleSendMessage = this.handleSendMessage.bind(this)        this.handleChatKeyDown = this.handleChatKeyDown.bind(this)    }    componentDidMount () {        $(window).on('focus', () =&gt; {            this.setState({                isWindowFocused: true,                unreadMessageCount: 0            })            $('head title').text('Chat | SZTEChat')        })        $(window).on('blur', () =&gt; {            this.setState({                isWindowFocused: false            })        })        axios({            method: 'GET',            url: '\/api\/users'        }).then(result =&gt; result.data)        .then(json =&gt; {            if (json.error) return console.warn(json.message);            let {me, users} = json.details            this.setState({                users: users.filter(user =&gt; {                    if (user.email != me.email)                    return true                    json.details.me = user                    return false                }),                me: json.details.me            })            this.polling.bind(this).call()        })        .catch(err =&gt; console.warn(err))        .then(() =&gt; {            $('#react-loading').remove()            $('#pleaseWait').remove()        })    }    render () {        return (            &lt;div id=\"ContentScreen\"&gt;                                &lt;div className=\"rightSide\"&gt;                    &lt;div className=\"gradient\"&gt;&lt;\/div&gt;                                        &lt;div className={this.state.isShowingEmojiPanel ? 'messagesContainer open': 'messagesContainer'}&gt;                        &lt;div ref=\"messagesArea\" className=\"messagesArea\"&gt;                        &lt;\/div&gt;                    &lt;\/div&gt;                    &lt;div className={this.state.isShowingEmojiPanel ? 'chatContainer open': 'chatContainer'}&gt;                        &lt;div className=\"emojiContainer\"&gt;                            &lt;div className=\"emojis\"&gt;                                {                                    this.state.emojis                                    .map((emoji, i) =&gt; {                                        let em = emoji                                        let isObj = typeof em === 'object'                                        let css = isObj ? em.css : em                                        let title = isObj ? (em.title || em.css) : em                                        return (                                        &lt;div onClick={this.handleSetEmoji.bind(this, i)} key={i} className=\"emoji\" title={`:${title}:`}&gt;                                            &lt;i className={`em em-${css}`}&gt;&lt;\/i&gt;                                        &lt;\/div&gt;)                                        })                                }                            &lt;\/div&gt;                        &lt;\/div&gt;                        &lt;div className=\"container\"&gt;                            &lt;div className=\"emoji-opener\" data-icon={`emoji${this.state.isShowingEmojiPanel?'-arrow':''}`} title=\"Emojis\"                            onClick={this.toggleEmojiPanel.bind(this)}                            &gt;&lt;\/div&gt;                            &lt;div className=\"chattextContainer\"&gt;                                &lt;span className=\"ph\"&gt;Text a message&lt;\/span&gt;                                &lt;div className=\"chattext\" ref=\"chattext\" onKeyDown={this.handleChatKeyDown} contentEditable={true}&gt;&lt;\/div&gt;                            &lt;\/div&gt;                            &lt;div className=\"send\" onClick={this.handleSendMessage} data-icon=\"send\" title=\"Send the message\"&gt;&lt;\/div&gt;                        &lt;\/div&gt;                    &lt;\/div&gt;                &lt;\/div&gt;                &lt;div className=\"leftSide\"&gt;                                        &lt;div className=\"header\"&gt;                        &lt;div className=\"title\"&gt;                            &lt;div className=\"imageContainer\" style={{backgroundImage: `url(\/api\/photo\/${this.state.me.id})`}}&gt;&lt;\/div&gt;                            &lt;div className=\"nickName\"&gt;{this.state.me.nickname}&lt;\/div&gt;                        &lt;\/div&gt;                        &lt;div className=\"settingsContainer\"&gt;                            &lt;div className=\"setting\" onClick={this.handleLogOut} data-icon=\"shutdown\" title=\"Log out\"&gt;&lt;\/div&gt;                        &lt;\/div&gt;                    &lt;\/div&gt;                    &lt;div className=\"middle\"&gt;                        &lt;div className=\"searchContainer\"&gt;                            &lt;input type=\"search\" data-icon=\"search\" onChange={this.handleSetFilter} placeholder=\"Search user\" className=\"searchInput\"\/&gt;                        &lt;\/div&gt;                                                &lt;div className=\"usersContainer\"&gt;                            &lt;ul className=\"userUlList\"&gt;                                {                                    this.state.users.map((user, i) =&gt; {                                    let show = user.nickname.indexOf(this.state.filterUl) != -1 ||                                                 user.email.indexOf(this.state.filterUl) != -1                                                                            return (&lt;li key={i} className=\"userLi\" style={{display: show || 'none'}}&gt;                                        &lt;div style={{backgroundImage: `url(\/api\/photo\/${user.id})`}} className=\"imageContainer\"&gt;&lt;\/div&gt;                                        &lt;div className=\"infoContainer\"&gt;                                            &lt;div className=\"nickName\"&gt;{user.nickname}&lt;\/div&gt;                                            &lt;div className=\"email\"&gt;{user.email}&lt;\/div&gt;                                        &lt;\/div&gt;                                    &lt;\/li&gt;)                                    })                                }                            &lt;\/ul&gt;                        &lt;\/div&gt;                    &lt;\/div&gt;                &lt;\/div&gt;            &lt;\/div&gt;        )    }    handleSetFilter (event) {        let value = event.target.value        this.setState({            filterUl: value        })    }    handleLogOut () {        axios({            method: 'DELETE',            url: '\/api\/logout'        }).then(result =&gt; result.data)        .then(json =&gt; {            window.location.reload()        })        .catch(err =&gt; console.log(err))    }    handleSetEmoji (i) {        let chattext = this.refs.chattext        let em = this.state.emojis[i]        let isObj = typeof em === 'object'        let css = isObj ? em.css : em        let title = isObj ? (em.title || em.css) : em        let emojiEl = `&lt;span contenteditable=\"false\" data-type=\"emoji\" class=\"${`em em-${css}`} emoji\" title=\":${title}:\"&gt;:${css}:&lt;\/span&gt;`        chattext.innerHTML += emojiEl        \/*        let sel, range, html;        if (window.getSelection) {            sel = window.getSelection();            if (sel.getRangeAt &amp;&amp; sel.rangeCount) {                range = sel.getRangeAt(0);                range.deleteContents();                range.insertNode( document.createTextNode(emojiEl) );            }        } else if (document.selection &amp;&amp; document.selection.createRange) {            document.selection.createRange().text = emojiEl;        }*\/            }    getEmojis () {        return [{css: 'smiley', title: 'Smiley'}, 'mosque','flag-tr','flag-hu','innocent',                    'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',            'mosque','flag-tr','flag-hu','innocent',        ]    }    toggleEmojiPanel () {        this.setState(state =&gt; {            return {isShowingEmojiPanel: !state.isShowingEmojiPanel}        })    }    polling () {        axios({            method: 'GET',            url: '\/api\/polling.php'        })        .then(result =&gt; result.data)        .then(json =&gt; {            if (!json.hasOwnProperty('error')) return \/*throw*\/ new Error('not a json')            if (json.error === true) throw new Error(json.message || 'An undefined error')            if (!json.content) throw new Error('content is empty')                        let {isWindowFocused, audio} = this.state                        if (!isWindowFocused) {                                audio.pause(); audio.currentTime = 0; audio.play()            }            let { messagesArea } = this.refs             let { messages } = json.content            let isScrollBottom = messagesArea.scrollHeight - messagesArea.scrollTop === messagesArea.clientHeight            Object.keys(messages).forEach(keytime =&gt; {                let { message, sender, time } = messages[keytime]                                let me = sender == localStorage.getItem('email')                let classMe = me ? ' me':''                let classSame = ''                                let lastMessageSender = $(messagesArea).find('.messageContainer:last .sender')                if (lastMessageSender.length) {                    classSame = lastMessageSender.html() == sender ? ' same': ''                }                let tempMessage = message                let editedMessage = message                let regex = \/:(.*?):\/gmi                let i                let objIcons = []                do {                    i = regex.exec(message)                    if (!i || i[0].indexOf(' ') != -1)                        continue                    if (objIcons.hasOwnProperty(i[1]))                        continue                    let title                    let css = title = i[1]                                        let bigClass = i.input.trim() == i[0] ? \" big\" : \"\"                    let emojiTemplate = `&lt;span contenteditable=\"false\" data-type=\"emoji\" class=\"${`em em-${css}`} emoji${bigClass}\" title=\":${title}:\"&gt;:${css}:&lt;\/span&gt;`                                        objIcons[i[1]] = emojiTemplate                } while (i)                Object.keys(objIcons).forEach((key, i) =&gt; {                    editedMessage = editedMessage.replace(new RegExp(`:${key}:`, 'g'), objIcons[key])                })                let date = new Date(time * 1000)                let hours = date.getHours()                hours = hours &lt; 10 ? `0${hours}` : hours                                let minutes = date.getMinutes()                minutes = minutes &lt; 10 ? `0${minutes}` : minutes                $(messagesArea).append(                `&lt;div class=\"messageContainer\"&gt;                    &lt;div class=\"messageHolder${classMe + classSame}\"&gt;                        &lt;div class=\"name\"&gt;${sender}&lt;\/div&gt;                        &lt;div class=\"sender hidden\"&gt;${sender}&lt;\/div&gt;                        &lt;span&gt;${editedMessage}&lt;\/span&gt;                        &lt;div class=\"time\" title=\"${date.toString()}\"&gt;${hours+\":\"+minutes}&lt;\/div&gt;                    &lt;\/div&gt;                &lt;\/div&gt;`                )                if (!isWindowFocused) {                     this.setState(state =&gt; {                        return {                            unreadMessageCount: state.unreadMessageCount + 1                        }                    })                    let count = this.state.unreadMessageCount                    let countText = count &lt;= 0 ? '' : `(${count}) `                    $('head title').text(`${countText}Chat | SZTEChat`)                }            })            if (isScrollBottom) {                messagesArea.scrollTop = messagesArea.scrollHeight            }        })        .catch(err =&gt; console.log(err.message))        .then(() =&gt; this.polling())    }    handleSendMessage () {        let { chattext } = this.refs        let message = chattext.innerHTML.trim()        if (!message.length) return                setTimeout(() =&gt; {            chattext.innerHTML = null        }, 1)        let params = new FormData()        params.append(\"message\", message);        axios({            method: 'POST',            url: '\/api\/sendmessage',            data: params        })        .then(response =&gt; response.data)        .then(json =&gt; {            if (json.error) return setTimeout(alert.bind(null, json.message), 1);                    })        .catch(err =&gt; console.log(err.message))    }    handleChatKeyDown (event) {        if (event.which === 13 &amp;&amp; !event.shiftKey) {            this.setState({isShowingEmojiPanel: false})            this.handleSendMessage()        }    }}",
-            "time": 1540084223
-        },
-        "1540085138@19120": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "asd",
-            "time": 1540085138
-        },
-        "1540085335@25254": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "sa",
-            "time": 1540085335
-        },
-        "1540085345@55642": {
-            "sender": "a@gmail.com",
-            "message": "as",
-            "time": 1540085345
-        },
-        "1540085363@31970": {
-            "sender": "a@gmail.com",
-            "message": "hasd",
-            "time": 1540085363
-        },
-        "1540085365@49327": {
-            "sender": "a@gmail.com",
-            "message": "deneme",
-            "time": 1540085365
-        },
-        "1540085490@58507": {
+        "1540660905@15163": {
             "sender": "a@gmail.com",
             "message": "hey",
-            "time": 1540085490
-        },
-        "1540085492@56300": {
-            "sender": "a@gmail.com",
-            "message": "naber",
-            "time": 1540085492
-        },
-        "1540085524@62191": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "iyidir senden",
-            "time": 1540085524
-        },
-        "1540085538@66398": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540085538
-        },
-        "1540085539@90117": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "maner",
-            "time": 1540085539
-        },
-        "1540085541@76418": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "iyid",
-            "time": 1540085541
-        },
-        "1540085544@47337": {
-            "sender": "a@gmail.com",
-            "message": "iyidr sendn",
-            "time": 1540085544
-        },
-        "1540085564@36239": {
-            "sender": "a@gmail.com",
-            "message": "iyi",
-            "time": 1540085564
-        },
-        "1540085667@85608": {
-            "sender": "a@gmail.com",
-            "message": "help",
-            "time": 1540085667
-        },
-        "1540085671@66646": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "as",
-            "time": 1540085671
-        },
-        "1540085674@62283": {
-            "sender": "a@gmail.com",
-            "message": "ff",
-            "time": 1540085674
-        },
-        "1540085677@86050": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540085677
-        },
-        "1540085681@56235": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "nber",
-            "time": 1540085681
-        },
-        "1540085683@42459": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "iyi misin",
-            "time": 1540085683
-        },
-        "1540085689@97491": {
-            "sender": "a@gmail.com",
-            "message": "iyidir senden",
-            "time": 1540085689
-        },
-        "1540085693@97430": {
-            "sender": "a@gmail.com",
-            "message": "hey",
-            "time": 1540085693
-        },
-        "1540085787@68890": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540085787
-        },
-        "1540085788@19922": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "selamar",
-            "time": 1540085788
-        },
-        "1540085805@43221": {
-            "sender": "a@gmail.com",
-            "message": "selam",
-            "time": 1540085805
-        },
-        "1540085808@50983": {
-            "sender": "a@gmail.com",
-            "message": "fa",
-            "time": 1540085808
-        },
-        "1540085812@49429": {
-            "sender": "a@gmail.com",
-            "message": "selam naber",
-            "time": 1540085812
-        },
-        "1540085955@22390": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "selamlar size",
-            "time": 1540085955
-        },
-        "1540085963@61198": {
-            "sender": "a@gmail.com",
-            "message": "te\u015fekk\u00fcrler",
-            "time": 1540085963
-        },
-        "1540085964@64763": {
-            "sender": "a@gmail.com",
-            "message": "sizede",
-            "time": 1540085964
-        },
-        "1540085970@36117": {
-            "sender": "a@gmail.com",
-            "message": "nas\u0131ls\u0131n\u0131z son g\u00fcnlerde",
-            "time": 1540085970
-        },
-        "1540085975@85108": {
-            "sender": "a@gmail.com",
-            "message": "iyi misiniz acaba?",
-            "time": 1540085975
-        },
-        "1540085984@58243": {
-            "sender": "a@gmail.com",
-            "message": "evet :flag-tr:",
-            "time": 1540085984
-        },
-        "1540085991@64882": {
-            "sender": "a@gmail.com",
-            "message": ":flag-ff:",
-            "time": 1540085991
-        },
-        "1540085999@15247": {
-            "sender": "a@gmail.com",
-            "message": ":flag-fr:",
-            "time": 1540085999
-        },
-        "1540086347@60320": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "deneme :flag-tr:",
-            "time": 1540086347
-        },
-        "1540086373@20841": {
-            "sender": "a@gmail.com",
-            "message": "hey :flag-fr:",
-            "time": 1540086373
-        },
-        "1540086385@60201": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":hand:",
-            "time": 1540086385
-        },
-        "1540086431@21566": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":hand:",
-            "time": 1540086431
-        },
-        "1540086451@76547": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":hand:",
-            "time": 1540086451
-        },
-        "1540086469@19994": {
-            "sender": "a@gmail.com",
-            "message": ":hand:",
-            "time": 1540086469
-        },
-        "1540086473@28836": {
-            "sender": "a@gmail.com",
-            "message": ":flag-tr:",
-            "time": 1540086473
-        },
-        "1540086476@23701": {
-            "sender": "a@gmail.com",
-            "message": ":flash:",
-            "time": 1540086476
-        },
-        "1540086507@14159": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":flag-fr::flag-hu::flag-tr: aaa :flag-tr: sadsad : deneeme :",
-            "time": 1540086507
-        },
-        "1541086532@39292": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":innocent::mosque:",
-            "time": 1540086522
-        },
-        "1540096622@83348": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "merhaba",
-            "time": 1540096622
-        },
-        "1540096641@67998": {
-            "sender": "a@gmail.com",
-            "message": "selamlar",
-            "time": 1540096641
-        },
-        "1540096646@28006": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540096646
-        },
-        "1540096651@96112": {
-            "sender": "a@gmail.com",
-            "message": "merhaba sze",
-            "time": 1540096651
-        },
-        "1540096655@40274": {
-            "sender": "a@gmail.com",
-            "message": "sizede",
-            "time": 1540096655
-        },
-        "1540096658@44937": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "eve",
-            "time": 1540096658
-        },
-        "1540096695@78721": {
-            "sender": "a@gmail.com",
-            "message": "hey",
-            "time": 1540096695
-        },
-        "1540097495@59821": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "ff",
-            "time": 1540097495
-        },
-        "1540097525@19880": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "sad",
-            "time": 1540097525
-        },
-        "1540097587@86799": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "heyt",
-            "time": 1540097587
-        },
-        "1540097596@77358": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "orda m\u0131s\u0131n",
-            "time": 1540097596
-        },
-        "1540098968@45512": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540098968
-        },
-        "1540099424@45769": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "heyfa",
-            "time": 1540099424
-        },
-        "1540099454@12023": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "asd",
-            "time": 1540099454
-        },
-        "1540099517@66628": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "aa",
-            "time": 1540099517
-        },
-        "1540099575@84704": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "ff",
-            "time": 1540099575
-        },
-        "1540099623@89875": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "he",
-            "time": 1540099623
-        },
-        "1540100101@31046": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540100101
-        },
-        "1540102482@39133": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "uas",
-            "time": 1540102482
-        },
-        "1540102494@33564": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "fafsa",
-            "time": 1540102494
-        },
-        "1540102684@76632": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "asd",
-            "time": 1540102684
-        },
-        "1540102932@24432": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "tektek",
-            "time": 1540102932
-        },
-        "1540102987@25264": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "fal",
-            "time": 1540102987
-        },
-        "1540102997@88810": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "key",
-            "time": 1540102997
-        },
-        "1540103050@46613": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "aa",
-            "time": 1540103050
-        },
-        "1540103121@95692": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "fff",
-            "time": 1540103121
-        },
-        "1540103201@53841": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "se",
-            "time": 1540103201
-        },
-        "1540103210@78700": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540103210
-        },
-        "1540103430@34545": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "ff",
-            "time": 1540103430
-        },
-        "1540103444@25304": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "upf",
-            "time": 1540103444
-        },
-        "1540103734@59840": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "heff",
-            "time": 1540103734
-        },
-        "1540103789@77004": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "ffffaaa",
-            "time": 1540103789
-        },
-        "1540104015@33195": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "afasa",
-            "time": 1540104015
-        },
-        "1540104047@39982": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "ff",
-            "time": 1540104047
-        },
-        "1540104086@43375": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "uuuhh",
-            "time": 1540104086
-        },
-        "1540104099@96222": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":flag-tr::innocent::mosque:",
-            "time": 1540104099
-        },
-        "1540104371@13341": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "kanka",
-            "time": 1540104371
-        },
-        "1540104493@59177": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hmm",
-            "time": 1540104493
-        },
-        "1540104543@13513": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "afsa",
-            "time": 1540104543
-        },
-        "1540104608@53303": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "ff",
-            "time": 1540104608
-        },
-        "1540104640@27766": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "s",
-            "time": 1540104640
-        },
-        "1540104666@65574": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "fffaa",
-            "time": 1540104666
-        },
-        "1540105086@76949": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540105086
-        },
-        "1540105121@62152": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "ff",
-            "time": 1540105121
-        },
-        "1540105501@28688": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "fas",
-            "time": 1540105501
-        },
-        "1540105505@27409": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "tek",
-            "time": 1540105505
-        },
-        "1540105533@62385": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "as",
-            "time": 1540105533
-        },
-        "1540105611@21631": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "asd",
-            "time": 1540105611
-        },
-        "1540105760@53531": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "aa",
-            "time": 1540105760
-        },
-        "1540105768@82802": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "fffffff",
-            "time": 1540105768
-        },
-        "1540105780@28356": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "ufs",
-            "time": 1540105780
-        },
-        "1540105879@90262": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "aaasfa",
-            "time": 1540105879
-        },
-        "1540105894@38510": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "fafsa",
-            "time": 1540105894
-        },
-        "1540105903@27463": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "tek",
-            "time": 1540105903
-        },
-        "1540105912@11182": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "ne",
-            "time": 1540105912
-        },
-        "1540106190@14242": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "ffa22",
-            "time": 1540106190
-        },
-        "1540107617@16620": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey or",
-            "time": 1540107617
-        },
-        "1540107750@50670": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540107750
-        },
-        "1540107768@97663": {
-            "sender": "a@gmail.com",
-            "message": "what",
-            "time": 1540107768
-        },
-        "1540107774@99747": {
-            "sender": "a@gmail.com",
-            "message": "are you there",
-            "time": 1540107774
-        },
-        "1540107780@36545": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "yes i am&nbsp;",
-            "time": 1540107780
-        },
-        "1540107787@19752": {
-            "sender": "a@gmail.com",
-            "message": "how r y",
-            "time": 1540107787
-        },
-        "1540107791@65715": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "its ok",
-            "time": 1540107791
-        },
-        "1540107795@86775": {
-            "sender": "a@gmail.com",
-            "message": "qq",
-            "time": 1540107795
-        },
-        "1540107798@53616": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "bb",
-            "time": 1540107798
-        },
-        "1540107799@32379": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "b",
-            "time": 1540107799
-        },
-        "1540107799@41558": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "b",
-            "time": 1540107799
-        },
-        "1540107800@59633": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "b",
-            "time": 1540107800
-        },
-        "1540107800@94606": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "b",
-            "time": 1540107800
-        },
-        "1540107806@45463": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "he&nbsp;",
-            "time": 1540107806
-        },
-        "1540107806@52142": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "a",
-            "time": 1540107806
-        },
-        "1540107806@83807": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "a",
-            "time": 1540107806
-        },
-        "1540107806@25153": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "s",
-            "time": 1540107806
-        },
-        "1540107807@38526": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "a",
-            "time": 1540107807
-        },
-        "1540107807@74552": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "fa",
-            "time": 1540107807
-        },
-        "1540107807@39856": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "a",
-            "time": 1540107807
-        },
-        "1540107807@97391": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "a",
-            "time": 1540107807
-        },
-        "1540107807@53131": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "a",
-            "time": 1540107807
-        },
-        "1540107807@73673": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "sa",
-            "time": 1540107807
-        },
-        "1540107807@67640": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "s",
-            "time": 1540107807
-        },
-        "1540107813@64162": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "a",
-            "time": 1540107813
-        },
-        "1540107814@20349": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "c",
-            "time": 1540107814
-        },
-        "1540107814@11588": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "d",
-            "time": 1540107814
-        },
-        "1540107814@80467": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "e",
-            "time": 1540107814
-        },
-        "1540107815@64454": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "f",
-            "time": 1540107815
-        },
-        "1540107815@82874": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "g",
-            "time": 1540107815
-        },
-        "1540107815@79922": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "h",
-            "time": 1540107815
-        },
-        "1540107816@21601": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "as",
-            "time": 1540107816
-        },
-        "1540107816@83096": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "fma",
-            "time": 1540107816
-        },
-        "1540107817@56330": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "snf",
-            "time": 1540107817
-        },
-        "1540107818@64661": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "as",
-            "time": 1540107818
-        },
-        "1540107818@39687": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "f",
-            "time": 1540107818
-        },
-        "1540107818@90949": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "f",
-            "time": 1540107818
-        },
-        "1540107818@17246": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "f",
-            "time": 1540107818
-        },
-        "1540107819@19147": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "f",
-            "time": 1540107819
-        },
-        "1540107819@52785": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "f",
-            "time": 1540107819
-        },
-        "1540107819@78535": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "f",
-            "time": 1540107819
-        },
-        "1540107819@10502": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "f",
-            "time": 1540107819
-        },
-        "1540107824@35405": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "a",
-            "time": 1540107824
-        },
-        "1540107827@44978": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "q",
-            "time": 1540107827
-        },
-        "1540107828@84388": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "s",
-            "time": 1540107828
-        },
-        "1540107828@76610": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "d",
-            "time": 1540107828
-        },
-        "1540107829@93612": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "f",
-            "time": 1540107829
-        },
-        "1540107829@46679": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "h",
-            "time": 1540107829
-        },
-        "1540107829@41127": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "a",
-            "time": 1540107829
-        },
-        "1540107829@32257": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "s",
-            "time": 1540107829
-        },
-        "1540107830@65408": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "f",
-            "time": 1540107830
-        },
-        "1540107830@47950": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "h",
-            "time": 1540107830
-        },
-        "1540107830@75410": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "e",
-            "time": 1540107830
-        },
-        "1540107833@68831": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "s",
-            "time": 1540107833
-        },
-        "1540107833@98070": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "aka",
-            "time": 1540107833
-        },
-        "1540107834@85035": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "s",
-            "time": 1540107834
-        },
-        "1540107879@64771": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "tete",
-            "time": 1540107879
-        },
-        "1540107882@77556": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540107882
-        },
-        "1540112333@64397": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hry",
-            "time": 1540112333
-        },
-        "1540112346@13188": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "asd",
-            "time": 1540112346
-        },
-        "1540112348@94465": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "fasf",
-            "time": 1540112348
-        },
-        "1540113296@82259": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey naber",
-            "time": 1540113296
-        },
-        "1540113305@57494": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "orda m\u0131s\u0131n",
-            "time": 1540113305
-        },
-        "1540113328@45952": {
-            "sender": "a@gmail.com",
-            "message": "merhaba",
-            "time": 1540113328
-        },
-        "1540113330@44621": {
-            "sender": "a@gmail.com",
-            "message": "selamlar",
-            "time": 1540113330
-        },
-        "1540113337@91568": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "selam buyrun",
-            "time": 1540113337
-        },
-        "1540113435@28954": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540113435
-        },
-        "1540113444@84409": {
-            "sender": "a@gmail.com",
-            "message": "buyrun",
-            "time": 1540113444
-        },
-        "1540113953@65506": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "heyy",
-            "time": 1540113953
-        },
-        "1540113962@33966": {
-            "sender": "a@gmail.com",
-            "message": "merhaa",
-            "time": 1540113962
-        },
-        "1540114021@34639": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540114021
-        },
-        "1540114049@38917": {
-            "sender": "a@gmail.com",
-            "message": "merhaba",
-            "time": 1540114049
-        },
-        "1540114057@93895": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "ey",
-            "time": 1540114057
-        },
-        "1540114063@16054": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "aa",
-            "time": 1540114063
-        },
-        "1540115320@17120": {
-            "sender": "a@gmail.com",
-            "message": "hey",
-            "time": 1540115320
-        },
-        "1540115329@15219": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":innocent::innocent:",
-            "time": 1540115329
-        },
-        "1540115858@55945": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":flag-tr::flag-tr:",
-            "time": 1540115858
-        },
-        "1540118101@47100": {
-            "sender": "yeni@y.com",
-            "message": "hey",
-            "time": 1540118101
-        },
-        "1540118106@46419": {
-            "sender": "yeni@y.com",
-            "message": ":flag-tr::flag-tr:",
-            "time": 1540118106
-        },
-        "1540118110@17136": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540118110
-        },
-        "1540118115@40748": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": ":innocent:",
-            "time": 1540118115
-        },
-        "1540118118@93869": {
-            "sender": "yeni@y.com",
-            "message": "ejsds",
-            "time": 1540118118
-        },
-        "1540118121@47614": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "fsafas",
-            "time": 1540118121
-        },
-        "1540118886@59770": {
-            "sender": "yeni@y.com",
-            "message": "selamlar",
-            "time": 1540118886
-        },
-        "1540118940@36344": {
-            "sender": "a@gmail.com",
-            "message": "selamlar",
-            "time": 1540118940
-        },
-        "1540118948@71172": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "hey",
-            "time": 1540118948
-        },
-        "1540119552@36189": {
-            "sender": "yeni@y.com",
-            "message": "d",
-            "time": 1540119552
-        },
-        "1540119557@31917": {
-            "sender": "metinsaritas2@gmail.com",
-            "message": "asd",
-            "time": 1540119557
+            "time": 1540660905
         }
     }
 }

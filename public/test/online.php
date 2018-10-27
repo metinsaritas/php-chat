@@ -41,14 +41,11 @@ function setOfflineUser ($email) {
 
 try {
 	
+	$lastUpdate = @$_POST["fileModifyTime"] ? $_POST["fileModifyTime"] : 0;
+	$olastUpdate = @$_POST["ofileModifyTime"] ? $_POST["ofileModifyTime"] : 0;
+
     $ofileModifyTime = filemtime($ofile);
 	$fileModifyTime = filemtime($file);
-	
-    $olastUpdate = $ofileModifyTime + 1;
-	$lastUpdate = $fileModifyTime + 1;
-	
-    $_COOKIE['olastUpdate'] = $olastUpdate;
-    $_COOKIE['lastUpdate'] = $lastUpdate;
 
 	while (true) {
 		
@@ -72,7 +69,7 @@ try {
 			$messages = eliminateByTime($fileAsArr); 
 			die_json([
 				'error' => false,
-				'time' => $fileModifyTime, 
+				'fileModifyTime' => $fileModifyTime, 
 				'type' => 'messages',
 				'content' => $messages
 			]);
@@ -86,7 +83,7 @@ try {
 			$ofileAsArr = json_decode($ofileRead, true);
 			die_json([
 				'error' => false,
-				'time' => $ofileModifyTime,
+				'ofileModifyTime' => $ofileModifyTime,
 				'type' => 'online',
 				'content' => $ofileAsArr
 			]);
@@ -113,7 +110,7 @@ function die_json ($arr) {
 
 
 function eliminateByTime ($arr) {
-	$cookieTime = @$_COOKIE["lastUpdate"];
+	$cookieTime = @$GLOBALS["lastUpdate"];
 	if ($cookieTime <= 0) return $arr;
 
 	$rMessages = [];
